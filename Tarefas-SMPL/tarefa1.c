@@ -1,3 +1,10 @@
+/* Autoria: Mayara Lessnau de Figueiredo Neves 
+*  Data da última modificação: 12/05/2026
+*  Finalidade: Este código é uma simulação de um Sistema Distribuído
+*  com detector de falhas em anel, onde cada processo executa testes no
+*  próximo do anel.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "smpl.h"
@@ -15,20 +22,20 @@ TipoProcesso *processo;
 int main (int argc, char *argv[]) {
 
     static int N, //número de processos do sistema distribuído
-           token, //indica o processo o processo que está executando agora
+           token, //indica o processo que está executando agora
            event, r, i,
            MaxTempoSimulac = 120;
 
     static char fa_name[5]; 
 
     if (argc != 2) {
-        puts("Uso correto: tempo <numero de processos>");
+        puts("Uso correto: ./tarefa1 <numero de processos>");
         exit(1);
     }
 
     N = atoi(argv[1]);
 
-    smpl(0, "Tarefa 1 do trabalho de Sistemas Distribuidos");
+    smpl(0, "Tarefa 1 do trabalho 0 de Sistemas Distribuidos");
     reset();
     stream(1);
 

@@ -1,16 +1,26 @@
-all: tarefa2
+CC = gcc
+CFLAGS = -Wall -g
 
-tarefa2: tarefa2.o smpl.o rand.o
-	$(LINK.c) -o $@ -Bstatic tarefa1.o smpl.o rand.o -lm
+BIBLIOTECAS = smpl.o rand.o
 
-smpl.o: smpl.c smpl.h
-	$(COMPILE.c)  -g smpl.c
+PROGRAMAS = tarefa1 tarefa2 tarefa3 tarefa4 tempo
 
-tarefa2.o: tarefa2.c smpl.h
-	$(COMPILE.c) -g  tarefa2.c
+all: $(PROGRAMAS)
 
-rand.o: rand.c
-	$(COMPILE.c) -g rand.c
+tarefa1: tarefa1.o $(BIBLIOTECAS)
+	$(CC) $(CFLAGS) -o $@ $^ -lm
+
+tarefa2: tarefa2.o $(BIBLIOTECAS)
+	$(CC) $(CFLAGS) -o $@ $^ -lm
+
+tarefa3: tarefa3.o $(BIBLIOTECAS)
+	$(CC) $(CFLAGS) -o $@ $^ -lm
+
+tarefa4: tarefa4.o $(BIBLIOTECAS)
+	$(CC) $(CFLAGS) -o $@ $^ -lm
+
+tempo: tempo.o $(BIBLIOTECAS)
+	$(CC) $(CFLAGS) -o $@ $^ -lm
 
 clean:
-	$(RM) *.o tarefa2 relat saida
+	rm -f *.o $(PROGRAMAS)

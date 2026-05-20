@@ -23,13 +23,13 @@ TipoProcesso *processo;
 int main (int argc, char *argv[]) {
 
     static int N, //número de processos do sistema distribuído
-           token, //indica o processo o processo que está executando agora
+           token, //indica o processo que está executando agora
            event, r, i,
            MaxTempoSimulac = 120;
     static char fa_name[5]; // nome da facility
 
     if (argc != 2) {
-        puts("Uso correto: tempo <numero de processos>");
+        puts("Uso correto: ./tempo <numero de processos>");
         exit(1);
     }
 
