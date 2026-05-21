@@ -1,9 +1,9 @@
 /* Autoria: Mayara Lessnau de Figueiredo Neves 
-*  Data da última modificação: 20/05/2026
-*  Finalidade: Este código é uma simulação de um Sistema Distribuído
+*  Data da ultima modificacao: 20/05/2026
+*  Finalidade: Este codigo eh uma simulacao de um Sistema Distribuido
 *  com detector de falhas em anel, onde cada processo executa testes no
-*  próximo do anel até encontrar outro processo correto. Cada processo
-*  também mantém localmento o vetor State[N]. A entrada do vetor State[j]
+*  proximo do anel ate encontrar outro processo correto. Cada processo
+*  tambem mantem localmento o vetor State[N]. A entrada do vetor State[j]
 *  indica o estado do processo j (UNKNOWN, CORRETO ou FALHO).
 */
 
@@ -20,26 +20,34 @@
 #define FALHO 1
 
 typedef struct {
-    int id;     //identificador de facility do SMPL 
+    int id;         // identificador de facility do SMPL 
+    int *State;     // vetor de estados dos processos
 } TipoProcesso;
 
 TipoProcesso *processo;
 
-void imprime_state (int p, int N, int state[]) {
+void limpeza (TipoProcesso* p, int N) {
+    for (int i = 0; i < N; i++)
+        free (processo[i].State);
 
+    free (processo);
+    return;
+}
+
+void imprime_state (int p, int N) {
     printf("State(%d) no tempo %4.1f:\n", p, time());
-    for (int j = 0; j < N; j++) {
-        printf ("State(%d)[%d] = %d\n", p, j, state[j]);
-    }
-    printf("\n");
 
+    for (int j = 0; j < N; j++)
+        printf ("State[%d] = %d\n", j, processo[p].State[j]);
+
+    printf("\n");
     return;
 }
 
 int main (int argc, char *argv[]) {
 
-    static int N, //número de processos do sistema distribuído
-           token, //indica o processo que está executando agora
+    static int N, //numero de processos do sistema distribuido
+           token, //indica o processo que esta executando agora
            event, r, i, j,
            MaxTempoSimulac = 120;
 
@@ -51,7 +59,6 @@ int main (int argc, char *argv[]) {
     }
 
     N = atoi(argv[1]);
-    int State[N][N];  //vetor de estados 
 
     smpl(0, "Tarefa 3 do trabalho 0 de Sistemas Distribuidos");
     reset();
@@ -67,28 +74,28 @@ int main (int argc, char *argv[]) {
         processo[i].id = facility(fa_name, 1);
     }
 
-    // vamos agora fazer o escalonamento dos eventos iniciais
-
+    // inicializacao do vetor State[]
     for (i = 0; i < N; i++) {
-        // todos os processos de 0 até N-1 vão testar na unidade de tempo 30
-        schedule(test, 30.0, i); 
+        processo[i].State = (int*) malloc (sizeof(int) * N);
+        for (j = 0; j < N; j++) {
+            processo[i].State[j] = UNKNOWN;
+        }
+        processo[i].State[i] = CORRETO; // processo dono do vetor -> correto
     }
 
-    // inicialização do vetor State[]
+    // mostrando vetor State[] em estado inicial
+    for (j = 0; j < N; j++) {
+        imprime_state(j, N);
+    }
+
+    // vamos agora fazer o escalonamento dos eventos iniciais
     for (i = 0; i < N; i++) {
-        for (j = 0; j < N; j++) {
-            State[i][j] = UNKNOWN;
-        }
-        State[i][i] = CORRETO; // processo dono do vetor -> correto
+        // todos os processos de 0 ate N-1 vao testar na unidade de tempo 30
+        schedule(test, 30.0, i); 
     }
 
     schedule(fault, 31.0, 1);
     schedule(recovery, 61.0, 1);
-
-    // mostrando vetor State[] em estado inicial
-    for (j = 0; j < N; j++) {
-        imprime_state(j, N, State[j]);
-    }
 
     // agora vem o loop principal do simulador
 
@@ -99,12 +106,12 @@ int main (int argc, char *argv[]) {
         switch(event) {
             case test:
          
-                if (status(processo[token].id) != 0) break; //processo falho não testa
+                if (status(processo[token].id) != 0) break; //processo falho nao testa
 
-                int q = (token + 1) % N; //q é o póximo processo no anel
+                int q = (token + 1) % N; //q eh o proximo processo no anel
                 int estado;
 
-                // enquanto ainda não percorreu todos os processos do anel
+                // enquanto ainda nao percorreu todos os processos do anel
                 while (q != token) {
 
                     estado = status(processo[q].id);
@@ -112,23 +119,23 @@ int main (int argc, char *argv[]) {
                     // achou um correto :)
                     if (estado == 0) {
                         printf ("O processo %d testou o processo %d correto no tempo %4.1f\n", token, q, time());
-                        State[token][q] = CORRETO;
+                        processo[token].State[q] = CORRETO;
                         break;
                     }
 
-                    // se chegou aqui é porque está falho :(
+                    // se chegou aqui eh porque esta falho :(
                     printf ("O processo %d testou o processo %d falho no tempo %4.1f\n", token, q, time());
-                    State[token][q] = FALHO;
+                    processo[token].State[q] = FALHO;
 
-                    q = (q + 1) % N; // atualiza com o próximo
+                    q = (q + 1) % N; // atualiza com o proximo
                 }
 
-                // se q == token então deu uma volta no anel
+                // se q == token entao deu uma volta no anel
                 if (q == token)
                     printf ("O processo %d testou todos os processos falhos no tempo %4.1f\n", token, time());
 
                 // mostrando vetor State[]
-                imprime_state(token, N, State[token]);
+                imprime_state(token, N);
 
                 schedule (test, 30.0, token);
                 break;
@@ -147,4 +154,5 @@ int main (int argc, char *argv[]) {
                 break;
         }
     }
+    limpeza(processo, N);
 }

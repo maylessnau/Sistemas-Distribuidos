@@ -1,5 +1,5 @@
-//finalidade: aprender a programar a simulação de algoritmos distribuídos 
-//data: 02 de abril de 2026
+//finalidade: aprender a programar a simulacao de algoritmos distribuidos 
+//data: 02/04/2026
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,16 +14,16 @@
 
 typedef struct {
     int id;     //identificador de facility do SMPL 
-    // (facility: objeto que está simulando, no nosso caso são os processos)
-    // outras variáveis locais de cada processo são declaradas aqui dentro
+    // (facility: objeto que está simulando, no nosso caso sao os processos)
+    // outras variaveis locais de cada processo sao declaradas aqui dentro
 } TipoProcesso;
 
 TipoProcesso *processo;
 
 int main (int argc, char *argv[]) {
 
-    static int N, //número de processos do sistema distribuído
-           token, //indica o processo que está executando agora
+    static int N, //numero de processos do sistema distribuido
+           token, //indica o processo que esta executando agora
            event, r, i,
            MaxTempoSimulac = 120;
     static char fa_name[5]; // nome da facility
@@ -50,10 +50,10 @@ int main (int argc, char *argv[]) {
     }
 
     // Vamos agora fazer o escalonamento dos eventos iniciais
-    // No primeiro intervalo de testes os processos vão testar
+    // No primeiro intervalo de testes os processos vao testar
 
     for (i = 0; i < N; i++) {
-        // todos os processos de 0 até N-1 vão testar na unidade de tempo 30
+        // todos os processos de 0 ate N-1 vao testar na unidade de tempo 30
         schedule(test, 30.0, i); 
     }
 
@@ -67,7 +67,7 @@ int main (int argc, char *argv[]) {
         cause(&event, &token);
         switch(event) {
             case test: 
-                if (status(processo[token].id) != 0) break; //processo falho não testa
+                if (status(processo[token].id) != 0) break; //processo falho nao testa
                 printf ("Sou o processo %d e estou testando no tempo %4.1f\n", token, time());
                 schedule (test, 30.0, token);
                 break;
@@ -84,5 +84,6 @@ int main (int argc, char *argv[]) {
                 break;
         }
     }
+    free(processo);
 }
 

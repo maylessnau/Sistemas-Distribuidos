@@ -1,8 +1,8 @@
 /* Autoria: Mayara Lessnau de Figueiredo Neves 
-*  Data da última modificação: 12/05/2026
-*  Finalidade: Este código é uma simulação de um Sistema Distribuído
+*  Data da ultima modificacao: 12/05/2026
+*  Finalidade: Este codigo eh uma simulacao de um Sistema Distribuido
 *  com detector de falhas em anel, onde cada processo executa testes no
-*  próximo do anel.
+*  proximo do anel.
 */
 
 #include <stdio.h>
@@ -21,8 +21,8 @@ TipoProcesso *processo;
 
 int main (int argc, char *argv[]) {
 
-    static int N, //número de processos do sistema distribuído
-           token, //indica o processo que está executando agora
+    static int N, //numero de processos do sistema distribuido
+           token, //indica o processo que esta executando agora
            event, r, i,
            MaxTempoSimulac = 120;
 
@@ -52,7 +52,7 @@ int main (int argc, char *argv[]) {
     // Vamos agora fazer o escalonamento dos eventos iniciais
 
     for (i = 0; i < N; i++) {
-        // todos os processos de 0 até N-1 vão testar na unidade de tempo 30
+        // todos os processos de 0 ate N-1 vao testar na unidade de tempo 30
         schedule(test, 30.0, i); 
     }
 
@@ -66,8 +66,8 @@ int main (int argc, char *argv[]) {
         cause(&event, &token);
         switch(event) {
             case test: 
-                if (status(processo[token].id) != 0) break; //processo falho não testa
-                int j = (token + 1) % N; //j é o póximo processo no anel
+                if (status(processo[token].id) != 0) break; //processo falho nao testa
+                int j = (token + 1) % N; //j eh o proximo processo no anel
                 int estado = status(processo[j].id);
                 if (estado == 0) {
                     printf ("O processo %d testou o processo %d correto no tempo %4.1f\n", token, j, time());
@@ -90,4 +90,5 @@ int main (int argc, char *argv[]) {
                 break;
         }
     }
+    free(processo);
 }

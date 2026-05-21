@@ -26,7 +26,10 @@ make clean
 
 ### Tarefa 0: tempo.c
 
-O programa tempo.c apenas mostra os processos existindo no sistema e executando testes não definidos. Também mostra a falha do processo 1 no tempo 31 e recuperação no tempo 61.
+O programa tempo.c apenas mostra os processos existindo no sistema e executando testes não definidos. Também mostra a falha do processo 1 no tempo 31 e recuperação no tempo 61. 
+
+Obs.: este código era um exemplo feito em sala pelo professor, é apenas uma cópia, salvo uma única alteração feita que é liberar a memória alocada para processo no final da execução.
+
 Exemplo de saída:
 
 ```bash
@@ -89,82 +92,82 @@ Agora, cada processo, além de testar até encontrar outro correto, mantém loca
 
 ```bash
 State(0) no tempo  0.0:
-State(0)[0] = 0
-State(0)[1] = -1
-State(0)[2] = -1
+State[0] = 0
+State[1] = -1
+State[2] = -1
 
 State(1) no tempo  0.0:
-State(1)[0] = -1
-State(1)[1] = 0
-State(1)[2] = -1
+State[0] = -1
+State[1] = 0
+State[2] = -1
 
 State(2) no tempo  0.0:
-State(2)[0] = -1
-State(2)[1] = -1
-State(2)[2] = 0
+State[0] = -1
+State[1] = -1
+State[2] = 0
 
 O processo 0 testou o processo 1 correto no tempo 30.0
 State(0) no tempo 30.0:
-State(0)[0] = 0
-State(0)[1] = 0
-State(0)[2] = -1
+State[0] = 0
+State[1] = 0
+State[2] = -1
 
 O processo 1 testou o processo 2 correto no tempo 30.0
 State(1) no tempo 30.0:
-State(1)[0] = -1
-State(1)[1] = 0
-State(1)[2] = 0
+State[0] = -1
+State[1] = 0
+State[2] = 0
 
 O processo 2 testou o processo 0 correto no tempo 30.0
 State(2) no tempo 30.0:
-State(2)[0] = 0
-State(2)[1] = -1
-State(2)[2] = 0
+State[0] = 0
+State[1] = -1
+State[2] = 0
 
 O processo 1 falhou no tempo 31.0
 O processo 0 testou o processo 1 falho no tempo 60.0
 O processo 0 testou o processo 2 correto no tempo 60.0
 State(0) no tempo 60.0:
-State(0)[0] = 0
-State(0)[1] = 1
-State(0)[2] = 0
+State[0] = 0
+State[1] = 1
+State[2] = 0
 
 O processo 2 testou o processo 0 correto no tempo 60.0
 State(2) no tempo 60.0:
-State(2)[0] = 0
-State(2)[1] = -1
-State(2)[2] = 0
+State[0] = 0
+State[1] = -1
+State[2] = 0
 
 O processo 1 recuperou no tempo 61.0
 O processo 1 testou o processo 2 correto no tempo 62.0
 State(1) no tempo 62.0:
-State(1)[0] = -1
-State(1)[1] = 0
-State(1)[2] = 0
+State[0] = -1
+State[1] = 0
+State[2] = 0
 
 O processo 0 testou o processo 1 correto no tempo 90.0
 State(0) no tempo 90.0:
-State(0)[0] = 0
-State(0)[1] = 0
-State(0)[2] = 0
+State[0] = 0
+State[1] = 0
+State[2] = 0
 
 O processo 2 testou o processo 0 correto no tempo 90.0
 State(2) no tempo 90.0:
-State(2)[0] = 0
-State(2)[1] = -1
-State(2)[2] = 0
+State[0] = 0
+State[1] = -1
+State[2] = 0
 
 O processo 1 testou o processo 2 correto no tempo 92.0
 State(1) no tempo 92.0:
-State(1)[0] = -1
-State(1)[1] = 0
-State(1)[2] = 0
+State[0] = -1
+State[1] = 0
+State[2] = 0
 
 O processo 0 testou o processo 1 correto no tempo 120.0
 State(0) no tempo 120.0:
-State(0)[0] = 0
-State(0)[1] = 0
-State(0)[2] = 0
+State[0] = 0
+State[1] = 0
+State[2] = 0
 ```
 
 ### Tarefa 4
@@ -173,89 +176,89 @@ Nesta tarefa, quando um processo correto testa outro processo correto ele obtém
 
 ```bash
 State(0) no tempo  0.0:
-State(0)[0] = 0
-State(0)[1] = -1
-State(0)[2] = -1
+State[0] = 0
+State[1] = -1
+State[2] = -1
 
 State(1) no tempo  0.0:
-State(1)[0] = -1
-State(1)[1] = 0
-State(1)[2] = -1
+State[0] = -1
+State[1] = 0
+State[2] = -1
 
 State(2) no tempo  0.0:
-State(2)[0] = -1
-State(2)[1] = -1
-State(2)[2] = 0
+State[0] = -1
+State[1] = -1
+State[2] = 0
 
 O processo 0 testou o processo 1 correto no tempo 30.0
 O processo 0 obtém info sobre o processo 2 vinda do processo 1
 State(0) no tempo 30.0:
-State(0)[0] = 0
-State(0)[1] = 0
-State(0)[2] = -1
+State[0] = 0
+State[1] = 0
+State[2] = -1
 
 O processo 1 testou o processo 2 correto no tempo 30.0
 O processo 1 obtém info sobre o processo 0 vinda do processo 2
 State(1) no tempo 30.0:
-State(1)[0] = -1
-State(1)[1] = 0
-State(1)[2] = 0
+State[0] = -1
+State[1] = 0
+State[2] = 0
 
 O processo 2 testou o processo 0 correto no tempo 30.0
 O processo 2 obtém info sobre o processo 1 vinda do processo 0
 State(2) no tempo 30.0:
-State(2)[0] = 0
-State(2)[1] = 0
-State(2)[2] = 0
+State[0] = 0
+State[1] = 0
+State[2] = 0
 
 O processo 1 falhou no tempo 31.0
 O processo 0 testou o processo 1 falho no tempo 60.0
 O processo 0 testou o processo 2 correto no tempo 60.0
 State(0) no tempo 60.0:
-State(0)[0] = 0
-State(0)[1] = 1
-State(0)[2] = 0
+State[0] = 0
+State[1] = 1
+State[2] = 0
 
 O processo 2 testou o processo 0 correto no tempo 60.0
 O processo 2 obtém info sobre o processo 1 vinda do processo 0
 State(2) no tempo 60.0:
-State(2)[0] = 0
-State(2)[1] = 1
-State(2)[2] = 0
+State[0] = 0
+State[1] = 1
+State[2] = 0
 
 O processo 1 recuperou no tempo 61.0
 O processo 1 testou o processo 2 correto no tempo 62.0
 O processo 1 obtém info sobre o processo 0 vinda do processo 2
 State(1) no tempo 62.0:
-State(1)[0] = 0
-State(1)[1] = 0
-State(1)[2] = 0
+State[0] = 0
+State[1] = 0
+State[2] = 0
 
 O processo 0 testou o processo 1 correto no tempo 90.0
 O processo 0 obtém info sobre o processo 2 vinda do processo 1
 State(0) no tempo 90.0:
-State(0)[0] = 0
-State(0)[1] = 0
-State(0)[2] = 0
+State[0] = 0
+State[1] = 0
+State[2] = 0
 
 O processo 2 testou o processo 0 correto no tempo 90.0
 O processo 2 obtém info sobre o processo 1 vinda do processo 0
 State(2) no tempo 90.0:
-State(2)[0] = 0
-State(2)[1] = 0
-State(2)[2] = 0
+State[0] = 0
+State[1] = 0
+State[2] = 0
 
 O processo 1 testou o processo 2 correto no tempo 92.0
 O processo 1 obtém info sobre o processo 0 vinda do processo 2
 State(1) no tempo 92.0:
-State(1)[0] = 0
-State(1)[1] = 0
-State(1)[2] = 0
+State[0] = 0
+State[1] = 0
+State[2] = 0
 
 O processo 0 testou o processo 1 correto no tempo 120.0
 O processo 0 obtém info sobre o processo 2 vinda do processo 1
 State(0) no tempo 120.0:
-State(0)[0] = 0
-State(0)[1] = 0
-State(0)[2] = 0
+State[0] = 0
+State[1] = 0
+State[2] = 0
 ```

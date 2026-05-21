@@ -1,8 +1,8 @@
 /* Autoria: Mayara Lessnau de Figueiredo Neves 
-*  Data da última modificação: 12/05/2026
-*  Finalidade: Este código é uma simulação de um Sistema Distribuído
+*  Data da ultima modificacao: 12/05/2026
+*  Finalidade: Este codigo eh uma simulacao de um Sistema Distribuido
 *  com detector de falhas em anel, onde cada processo executa testes no
-*  próximo do anel até encontrar outro processo correto ou testar todos
+*  proximo do anel ate encontrar outro processo correto ou testar todos
 *  falhos.
 */
 
@@ -22,8 +22,8 @@ TipoProcesso *processo;
 
 int main (int argc, char *argv[]) {
 
-    static int N, //número de processos do sistema distribuído
-           token, //indica o processo que está executando agora
+    static int N, //numero de processos do sistema distribuido
+           token, //indica o processo que esta executando agora
            event, r, i,
            MaxTempoSimulac = 120;
 
@@ -53,7 +53,7 @@ int main (int argc, char *argv[]) {
     // Vamos agora fazer o escalonamento dos eventos iniciais
 
     for (i = 0; i < N; i++) {
-        // todos os processos de 0 até N-1 vão testar na unidade de tempo 30
+        // todos os processos de 0 ate N-1 vao testar na unidade de tempo 30
         schedule(test, 30.0, i); 
     }
 
@@ -70,10 +70,10 @@ int main (int argc, char *argv[]) {
          
                 if (status(processo[token].id) != 0) break; //processo falho não testa
 
-                int q = (token + 1) % N; //q é o póximo processo no anel
+                int q = (token + 1) % N; //q eh o proximo processo no anel
                 int estado;
 
-                // enquanto ainda não percorreu todos os processos do anel
+                // enquanto ainda nao percorreu todos os processos do anel
                 while (q != token) {
 
                     estado = status(processo[q].id);
@@ -84,12 +84,12 @@ int main (int argc, char *argv[]) {
                         break;
                     }
 
-                    // se chegou aqui é porque está falho
+                    // se chegou aqui eh porque esta falho
                     printf ("O processo %d testou o processo %d falho no tempo %4.1f\n", token, q, time());
                     q = (q + 1) % N; //atualiza com o próximo
                 }
 
-                // se q == token então deu uma volta no anel
+                // se q == token entao deu uma volta no anel
                 if (q == token) 
                     printf ("O processo %d testou todos os processos falhos no tempo %4.1f\n", token, time());
 
@@ -108,4 +108,5 @@ int main (int argc, char *argv[]) {
                 break;
         }
     }
+    free(processo);
 }
