@@ -1,6 +1,12 @@
-/* Autoria: Mayara Lessnau de Figueiredo Neves 
-*  Data da ultima modificação: 20/05/2026
-*  Finalidade: 
+/* Autoria: Mayara Lessnau de Figueiredo Neves e ALexander Danila Mion
+*  Data da ultima modificação: 26/05/2026
+*  Finalidade: Este codigo eh uma simulacao de um Sistema Distribuido
+*  com detector de falhas em anel, onde cada processo executa testes no
+*  proximo do anel ate encontrar outro processo correto. Cada processo
+*  tambem mantem localmento o vetor State[N]. A entrada do vetor State[j]
+*  indica o estado do processo j (UNKNOWN, CORRETO ou FALHO). Quando um 
+*  processo correto testa outro processo correto obtem as informacoes do 
+*  estado dos demais processos do sistema.
 */
 
 #include <stdio.h>
@@ -8,10 +14,10 @@
 #include "smpl.h"
 
 #define test 1
-#define election 2
-#define receive 3
-#define leader 4
-#define fault 5
+#define fault 2
+#define election 3
+#define receive 4
+#define leader 5
 #define recovery 6
 
 #define UNKNOWN -1
@@ -19,54 +25,47 @@
 #define FALHO 1
 
 typedef struct {
-    int candidate;          // candidato a lider 
-    int origin_id;          // id do processo que enviou a mensagem
-} Messages;
+    int candidate;      //conteudo da mensagem: candidato a lider
+    int origin_id;      //id da origem (pra saber quem mandou)
+} Message;
 
 typedef struct {
-    int id;                 // identificador de facility do SMPL 
-    int *State;             // vetor de estados dos processos
-    int Lider;              // variavel que indica quem eh o lider
-    int received;           // numero de mensagens recebidas
-    int seen;               // numero de mensagens que foram "vistas"
-    Messages *messages;     // vetor das mensagens de eleicao recebidas
-
+    int id;             // identificador de facility do SMPL 
+    int *State;         // vetor de estados dos processos
+    int Lider;          // id do processo considerado lider
+    Message *Messages;  // vetor de mensagens recebidas
+    int received;       // numero de mensagens recebidas
+    int seen;           // numero de mensagens "lidas"
 } TipoProcesso;
 
 TipoProcesso *processo;
 
-// liberando a memoria alocada para cada processo
-void limpeza (int N) {
+void limpeza (TipoProcesso* p, int N) {
     for (int i = 0; i < N; i++) {
-        free (processo[i].messages);
         free (processo[i].State);
+        free (processo[i].Messages);
     }
 
     free (processo);
     return;
 }
 
-void imprime_state (int p, int N) {
-    printf("State(%d) no tempo %4.1f:\n", p, time());
-
-    for (int j = 0; j < N; j++) 
-        printf ("State[%d] = %d\n", j, processo[p].State[j]);
-
-    printf("\n");
+void send (int destino, int conteudo, int origem) {
+    int id_msg = processo[destino].received;
+    processo[destino].Messages[id_msg].candidate = conteudo;
+    processo[destino].Messages[id_msg].origin_id = origem;
+    schedule (receive, 1 + id_msg, destino);
+    processo[destino].received++;
     return;
 }
 
-void send (int destination, int candidate, int origin) {
-    // a mensagem tem o id do numero de mensagens recebidas pelo destino
-    int id_msg = processo[destination].received;
+void imprime_state (int p, int N) {
+    printf("State(%d) no tempo %4.1f:\n", p, time());
 
-    // atualiza a mensagem no destino ("envia")
-    processo[destination].messages[id_msg].candidate = candidate;
-    processo[destination].messages[id_msg].origin_id = origin;
-    processo[destination].received++;
+    for (int j = 0; j < N; j++)
+        printf ("State[%d] = %d\n", j, processo[p].State[j]);
 
-    // escalona o receive com o tempo do id (para elas "chegarem" na ordem de envio)
-    schedule(receive, id_msg + 1, destination);
+    printf("\n");
     return;
 }
 
@@ -74,7 +73,7 @@ int main (int argc, char *argv[]) {
 
     static int N, //numero de processos do sistema distribuido
            token, //indica o processo que esta executando agora
-           event, r, i, j,
+           event, i, j,
            MaxTempoSimulac = 120;
 
     static char fa_name[5]; 
@@ -90,7 +89,8 @@ int main (int argc, char *argv[]) {
     reset();
     stream(1);
 
-    // inicializar os N processos
+    /******************************* INICIALIZAÇÕES **********************************/
+    // inicializando os N processos
 
     processo = (TipoProcesso*) malloc (sizeof(TipoProcesso)*N);
 
@@ -100,7 +100,7 @@ int main (int argc, char *argv[]) {
         processo[i].id = facility(fa_name, 1);
     }
 
-    // inicializacao do vetor State[]
+    // inicializando o vetor State[]
     for (i = 0; i < N; i++) {
         processo[i].State = (int*) malloc (sizeof(int) * N);
         for (j = 0; j < N; j++) {
@@ -109,36 +109,39 @@ int main (int argc, char *argv[]) {
         processo[i].State[i] = CORRETO; // processo dono do vetor -> correto
     }
 
-    // mostrando vetor State[] em estado inicial
-    for (j = 0; j < N; j++) {
-        imprime_state(j, N);
-    }
-
-    // inicializacao do vetor de mensagens
+    // inicializando o vetor Messages[]
+    // cada processo recebe no maximo N mensagens por rodada de eleicao no Chang-Roberts
     for (i = 0; i < N; i++) {
-        processo[i].messages = (Messages*) malloc (sizeof(Messages) * N);
-        processo[i].received = 0;
-        processo[i].seen = 0;
+        processo[i].Messages = (Message*) malloc (sizeof(Message) * N);
     }
 
+    // mostrando vetor State[] em estado inicial
+    //for (j = 0; j < N; j++) {
+    //    imprime_state(j, N);
+    //}
+
+    /********************************** SCHEDULE *************************************/
     // vamos agora fazer o escalonamento dos eventos iniciais
 
-    /******************************** SCHEDULES ******************************** */
     //for (i = 0; i < N; i++) {
         // todos os processos de 0 ate N-1 vão testar na unidade de tempo 30
-        //schedule(test, 30.0, i); 
+    //    schedule(test, 30.0, i); 
     //}
 
     //schedule(fault, 31.0, 1);
     //schedule(recovery, 61.0, 1);
     
     for (i = 0; i < N; i++) {
-        schedule(election, 00.0, i);
+        schedule(election, 0, i);
     }
-    /**************************************************************************** */
-    
 
-    
+    /*********************************************************************************/
+
+    int mensagens_enviadas = 0;
+
+    // inicializa semente aleatoria
+    srand(time(NULL));
+
     // agora vem o loop principal do simulador
     while (time() < MaxTempoSimulac) {
 
@@ -186,63 +189,59 @@ int main (int argc, char *argv[]) {
 
                 schedule (test, 30.0, token);
                 break;
-            
+
             case election:
                 
-                if (status(processo[token].id) != 0) break; // processo falho nao elege lider
-                
-                //inicializa semente aleatoria
-                srand(time(NULL)); 
+                // processo falho nao elege lider
+                if (status(processo[token].id) != 0) break;
 
-                int souCandidato =  rand() % 2;
-                printf("souCandidato de %d = %d\n", token, souCandidato);
-
-                int proximo = (token + 1) % N;  // id do proximo no anel
+                int souCandidato = rand() % 2;  // numero aleatorio entre 0 e 1
+                int proximo = (token + 1) % N;
 
                 if (souCandidato) {
                     processo[token].Lider = token;
-                    // envia a mensagem (token eh candidato e id da origem)
                     send (proximo, token, token);
+                    mensagens_enviadas++;
                     printf("O processo %d agora é candidato!\n", token);
-                }
-                else //nao eh candidato
+                } else  //nao eh candidato
                     processo[token].Lider = -1;
-
                 break;
 
             case receive:
 
                 proximo = (token + 1) % N;
                 int id_msg = processo[token].seen;
-                int candidato = processo[token].messages[id_msg].candidate;
-                printf("Processo %d recebeu mensagem que %d é o novo candidato.\n", token, candidato);
+                int candidato = processo[token].Messages[id_msg].candidate;
+                int origem = processo[token].Messages[id_msg].origin_id;
 
-                // se o candidato da mensagem for maior que o lider atual
+                printf("Processo %d recebeu mensagem de %d dizendo que %d é candidato a líder.\n", token, origem, candidato);
+
                 if (candidato > processo[token].Lider) {
-                    // atualiza o lider
                     processo[token].Lider = candidato;
-                    // informa o proximo
                     send (proximo, candidato, token);
-                    printf("Eu, processo %d, considero que %d eh o lider!\n", token, candidato);
+                    mensagens_enviadas++;
+                    printf ("Processo %d agora considera que %d é o líder!\n", token, candidato);
                 }
                 else if (candidato == token) {
-                    printf ("Fim da eleicao!!\n");
+                    printf ("Fim da Eleição de Líder no tempo %4.1f!\n", time());
+                    printf ("Total de mensagens enviadas: %d\n", mensagens_enviadas);
+                    // o lider encerra a simulacao
                     schedule (leader, (MaxTempoSimulac - time()), token);
-                } else {
-                    printf("Mensagem descartada!\n");
-                }           
+                } else
+                    printf ("Mensagem descartada!\n");
 
                 processo[token].seen++;
                 break;
 
             case leader:
 
-                printf ("Eu, processo %d, sou o lider!!\n", token);
+                printf ("Eu, processo de ID %d, sou o líder!\n", token);
                 break;
 
             case fault:
 
-                r = request (processo[token].id, token, 0);
+                // removi o r = request
+                request (processo[token].id, token, 0);
                 printf ("O processo %d falhou no tempo %4.1f\n", token, time());
                 break;
 
@@ -254,5 +253,5 @@ int main (int argc, char *argv[]) {
                 break;
         }
     }
-    limpeza(N);
+    limpeza(processo, N);
 }
