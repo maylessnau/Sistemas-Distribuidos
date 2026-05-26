@@ -2,11 +2,11 @@ CC = gcc
 CFLAGS = -Wall -g
 
 BIBLIOTECAS = smpl.o rand.o
-PROGRAMAS = chang-roberts
+PROGRAMAS = randomized
 
-all: chang-roberts
+all: randomized
 
-chang-roberts: chang-roberts.o $(BIBLIOTECAS)
+randomized: randomized.o $(BIBLIOTECAS)
 	$(CC) $(CFLAGS) -o $@ $^ -lm
 
 clean:
