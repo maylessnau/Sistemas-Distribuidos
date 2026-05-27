@@ -1,4 +1,4 @@
-/* Autoria: Mayara Lessnau de Figueiredo Neves e Alexander Danila Mion
+/* Autores: Mayara Lessnau de Figueiredo Neves e Alexander Danila Mion
 *  Data da ultima modificação: 26/05/2026
 *  Finalidade: Este codigo eh uma simulacao de um Sistema Distribuido
 *  com detector de falhas em anel, onde cada processo executa testes no
@@ -28,39 +28,40 @@
 typedef struct {
     int conteudo;       // conteudo da mensagem: bit de candidato
     int origin_id;      // id da origem (pra saber quem mandou)
-    int rodada;         // rodada em que a mensagem foi enviada
 } Message;
 
 typedef struct {
 
-    int id;             // identificador de facility do SMPL 
-    int *State;         // vetor de estados dos processos
+    int id;                     // identificador de facility do SMPL 
+    int *State;                 // vetor de estados dos processos
 
     /******************** Variaveis de Eleicao de Lider ***********************/
 
-    int Lider;          // id do processo considerado lider
-    short int bit;      // bit de candidato
-    int *candidatos;    // conjunto de candidatos a lider
-    int *receivedRound; // conjunto de mensagens recebidas na rodada
-    int rodadaAtual;    // rodada atual do processo na eleicao
-
+    int Lider;                  // id do processo considerado lider
+    short int bit;              // bit de candidato
+    int *candidatos;            // conjunto de candidatos a lider
+    int *receivedRound;         // conjunto de mensagens recebidas na rodada
+    int *participantesRodada;   // processos que eram candidatos na rodada anterior
+    short int terminouRodada;   // indica se o processo terminou a rodada
 
     /******************* Variaveis de Troca de Mensagens **********************/
 
-    Message *Messages;  // vetor de mensagens recebidas
-    int received;       // numero de mensagens recebidas
-    int seen;           // numero de mensagens "lidas"
+    Message *Messages;          // vetor de mensagens recebidas
+    int received;               // numero de mensagens recebidas
+    int seen;                   // numero de mensagens "lidas"
 
 } TipoProcesso;
 
 TipoProcesso *processo;
 
 void limpeza (TipoProcesso* p, int N) {
+
     for (int i = 0; i < N; i++) {
         free (processo[i].State);
         free (processo[i].Messages);
         free (processo[i].candidatos);
         free (processo[i].receivedRound);
+        free (processo[i].participantesRodada);
     }
 
     free (processo);
@@ -74,7 +75,6 @@ void send (int destino, int conteudo, int origem) {
     // coloca a mensagem no processo destino
     processo[destino].Messages[id_msg].conteudo = conteudo;
     processo[destino].Messages[id_msg].origin_id = origem;
-    processo[destino].Messages[id_msg].rodada = processo[origem].rodadaAtual;
 
     schedule (receive, 1, destino);
     processo[destino].received++;
@@ -83,6 +83,7 @@ void send (int destino, int conteudo, int origem) {
 }
 
 void imprime_state (int p, int N) {
+
     printf("State(%d) no tempo %4.1f:\n", p, time());
 
     for (int j = 0; j < N; j++)
@@ -102,17 +103,18 @@ int main (int argc, char *argv[]) {
     static char fa_name[5]; 
     
     if (argc != 2) {
-        puts("Uso correto: ./tarefa4 <numero de processos>");
+        puts("Uso correto: ./randomized <numero de processos>");
         exit(1);
     }
 
     N = atoi(argv[1]);
 
-    smpl(0, "Tarefa 4 do trabalho 0 de Sistemas Distribuidos");
+    smpl(0, "Algoritmo Aleatorizado para Eleicao de Lider");
     reset();
     stream(1);
 
     /******************************* INICIALIZAÇÕES **********************************/
+   
     // inicializa semente aleatoria
     srand(time(NULL));
     
@@ -134,22 +136,26 @@ int main (int argc, char *argv[]) {
         processo[i].State[i] = CORRETO; // processo dono do vetor -> correto
     }
 
-    // inicializando os vetores Messages[], receivedRound[] e candidatos[] 
-    // inicializando o bit aleatorio
     for (i = 0; i < N; i++) {
 
+        // inicializando os vetores Messages[], receivedRound[] e candidatos[] 
         processo[i].Messages = (Message*) malloc (sizeof(Message) * N);
         
         processo[i].candidatos = (int*) malloc (sizeof(int) * N);
         processo[i].receivedRound = (int*) malloc (sizeof(int) * N);
+        processo[i].participantesRodada = (int*) malloc (sizeof(int) * N);
 
         for (j = 0; j < N; j++) {
             processo[i].candidatos[j] = -1;
-            processo[i].candidatos[j] = -1;
+            processo[i].receivedRound[j] = -1;
+
+            // inicialmente todos participam
+            processo[i].participantesRodada[j] = j;
         }
 
+        // inicializando o bit aleatorio e terminouRodada
         processo[i].bit = rand() % 2;
-        processo[i].rodadaAtual = 0;
+        processo[i].terminouRodada = 0;
     }
 
     // mostrando vetor State[] em estado inicial
@@ -174,13 +180,16 @@ int main (int argc, char *argv[]) {
 
     /*********************************************************************************/
 
-    int mensagens_enviadas = 0;
+    int mensagensEnviadas = 0;
+    int rodadaAtual = 0;
+    int terminaramRodada = 0;
 
     // agora vem o loop principal do simulador
     while (time() < MaxTempoSimulac) {
 
         //pergunta se existe evento pra acontecer com o processo que tem o token
         cause(&event, &token); 
+
         switch(event) {
             case test:
          
@@ -230,11 +239,12 @@ int main (int argc, char *argv[]) {
                 int proximo = (token + 1) % N;
 
                 printf ("Processo %d tem bit %d na rodada %d\n", token, 
-                        processo[token].bit, processo[token].rodadaAtual);
+                        processo[token].bit, rodadaAtual);
 
                 send (proximo, processo[token].bit, token);
-                mensagens_enviadas++;
+                mensagensEnviadas++;
 
+                printf ("******************* ELEIÇÃO INICIADA *******************\n");
                 break;
 
             case receive:
@@ -244,78 +254,135 @@ int main (int argc, char *argv[]) {
                 int bit = processo[token].Messages[id_msg].conteudo;
                 int origem = processo[token].Messages[id_msg].origin_id;
 
-                int rodada_msg = processo[token].Messages[id_msg].rodada;
+                /************************* MENSAGEM *************************/
 
-                // ignora mensagens antigas
-                if (rodada_msg < processo[token].rodadaAtual) {
-                    processo[token].seen++;
-                    break;
+                processo[token].receivedRound[origem] = 1;
+                processo[token].seen++;
+                
+                // se a mensagem voltou 
+                // o anel garante que a mensagem passou por todos os corretos
+                if (origem == token) {
+                    printf ("Processo %d removeu sua mensagem do anel.\n", token);
+                } else {
+                    // se a mensagem nao eh minha, entao eu repasso
+                    send (proximo, bit, origem);
+                    mensagensEnviadas++;
                 }
-
-                // atualiza a rodada (se for preciso)
-                processo[token].rodadaAtual = rodada_msg;
 
                 // o processo eh candidato e nao eh considerado candidato
                 if (bit == 1 && processo[token].candidatos[origem] == -1) {
                     processo[token].candidatos[origem] = origem;  
-                    printf("Processo %d recebeu mensagem dizendo que %d é candidato a líder.\n", token, origem);
+                    printf("Processo %d recebeu mensagem: %d é candidato a líder na rodada %d.\n",
+                            token, origem, rodadaAtual);
                 } else {
-                    printf("Processo %d recebeu mensagem dizendo que %d não é candidato a líder.\n", token, origem);
+                    printf("Processo %d recebeu mensagem: %d não é candidato a líder na rodada %d.\n", 
+                            token, origem, rodadaAtual);
                 }
 
-                // se a mensagem voltou (o anel garante que a mensagem passou por todos os corretos)
-                if (origem == token) {
-                    printf ("Processo %d terminou rodada\n", token);
-                    schedule(newRound, 1, token);
-                } else {
-                    send (proximo, bit, origem);
-                    mensagens_enviadas++;
+                /******************** VERIFICA NEW ROUND *******************/
+                // se uma mensagem nova chegou pode ser que a rodada tenha acabado
+
+                int terminou = 1;
+                i = 0;
+
+                // verifica se ainda falta receber mensagem de algum processo
+                while (i < N && terminou) {
+                    
+                    // se o processo deveria mandar mensagem essa rodada
+                    if (processo[token].participantesRodada[i] != -1) {
+                        // mas ainda nao mandou
+                        if (processo[token].receivedRound[i] == -1) 
+                            terminou = 0;
+                    }
+            
+                    i++;
                 }
 
-                processo[token].seen++;
+                // recebeu todas as mensagens e ainda nao terminou a rodada
+                if (terminou && !processo[token].terminouRodada) {
+                    processo[token].terminouRodada = 1;
+                    schedule (newRound, 1, token);
+                }
+                // else: se nao terminou espera as proximas mensagens
+
                 break;
 
             case newRound:
-            
-                processo[token].rodadaAtual++;
 
                 int total = 0;
-                int possivel_lider = -1;
+                int candidatoRestante = -1;
                 proximo = (token + 1) % N;
+
+                terminaramRodada++;
+
+                int participantes = 0;
+
+                for (i = 0; i < N; i++) {
+                    if (processo[token].participantesRodada[i] != -1)
+                        participantes++;
+                }
+
+                if (terminaramRodada == participantes) {
+                    rodadaAtual++;
+                    terminaramRodada = 0;
+                    printf ("\n============= INICIANDO RODADA %d =============\n\n",  
+                            rodadaAtual);
+                }
 
                 for (i = 0; i < N; i++) {
                     if (processo[token].candidatos[i] != -1) {
                         total++;
-                        possivel_lider = i;
+                        candidatoRestante = i;
                     }
                 }
 
                 // restou apenas um processo candidato -> ele eh o lider
                 if (total == 1) {
+                    
+                    processo[token].Lider = candidatoRestante;
+                    schedule (leader, 1, candidatoRestante);
+
                     printf ("Fim da Eleição de Líder no tempo %4.1f!\n", time());
-                    processo[token].Lider = possivel_lider;
-                    schedule (leader, 1, possivel_lider);
-                    printf ("O processo %d reconhece %d como líder\n", token, possivel_lider);
+                    printf ("O processo %d reconhece %d como líder\n", token, candidatoRestante);
+                    
                     break;
                 } 
 
-                // nao tem lider -> proxima rodada
-            
+                // else: nao tem lider -> proxima rodada
+
+                // acabaram os candidatos :(
+                if (total == 0) {
+
+                    // todos voltam a participar
+                    for (i = 0; i < N; i++) 
+                        processo[token].participantesRodada[i] = i;
+
+                } else {
+
+                     // somente os candidatos da ultima rodada participam
+                    for (i = 0; i < N; i++) 
+                        processo[token].participantesRodada[i] = processo[token].candidatos[i];
+                }
+                
+                // se o processo participa dessa nova rodada
+                if (processo[token].participantesRodada[token] != -1) {
+
+                    // sorteia o bit de novo e manda mensagem informando o proximo
+                    processo[token].bit = rand() % 2;
+                    send (proximo, processo[token].bit, token);
+
+                    mensagensEnviadas++;
+                }
+
                 // limpa estruturas da rodada anterior
                 for (i = 0; i < N; i++) {
                     processo[token].candidatos[i] = -1;
+                    processo[token].receivedRound[i] = -1;
                 }
 
                 processo[token].received = 0;
                 processo[token].seen = 0;
-
-                // acabaram os candidatos :( ou o processo pode sortear de novo
-                if (total == 0 || processo[token].bit == 1) {
-                    // todos participam de novo
-                    processo[token].bit = rand() % 2;
-                    send (proximo, processo[token].bit, token);
-                    mensagens_enviadas++;
-                }
+                processo[token].terminouRodada = 0;
 
                 break;
 
