@@ -1,12 +1,12 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-BIBLIOTECAS = smpl.o rand.o
-PROGRAMAS = randomized
+BIBLIOTECAS = smpl.o rand.o fila.o randomized.o
+PROGRAMAS = main
 
-all: randomized
+all: main
 
-randomized: randomized.o $(BIBLIOTECAS)
+main: main.o $(BIBLIOTECAS)
 	$(CC) $(CFLAGS) -o $@ $^ -lm
 
 clean:
