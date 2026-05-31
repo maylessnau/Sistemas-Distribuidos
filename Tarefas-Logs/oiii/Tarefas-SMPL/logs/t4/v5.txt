@@ -1,0 +1,791 @@
+State(0) no tempo  0.0:
+State[0] = 0
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+State(1) no tempo  0.0:
+State[0] = -1
+State[1] = 0
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+State(2) no tempo  0.0:
+State[0] = -1
+State[1] = -1
+State[2] = 0
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+State(3) no tempo  0.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = 0
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+State(4) no tempo  0.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = 0
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+State(5) no tempo  0.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = 0
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+State(6) no tempo  0.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = 0
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+State(7) no tempo  0.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = 0
+State[8] = -1
+State[9] = -1
+
+State(8) no tempo  0.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = 0
+State[9] = -1
+
+State(9) no tempo  0.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = 0
+
+O processo 0 falhou no tempo  1.0
+O processo 1 falhou no tempo  1.0
+O processo 2 falhou no tempo  1.0
+O processo 3 falhou no tempo  1.0
+O processo 4 falhou no tempo  1.0
+O processo 5 falhou no tempo  1.0
+O processo 6 falhou no tempo  1.0
+O processo 7 falhou no tempo  1.0
+O processo 8 falhou no tempo  1.0
+O processo 9 falhou no tempo  1.0
+O processo 0 recuperou no tempo 31.0
+O processo 1 recuperou no tempo 31.0
+O processo 2 recuperou no tempo 31.0
+O processo 3 recuperou no tempo 31.0
+O processo 4 recuperou no tempo 31.0
+O processo 5 recuperou no tempo 31.0
+O processo 6 recuperou no tempo 31.0
+O processo 7 recuperou no tempo 31.0
+O processo 8 recuperou no tempo 31.0
+O processo 9 recuperou no tempo 31.0
+O processo 0 testou o processo 1 correto no tempo 32.0
+O processo 0 obtém info sobre o processo 2 vinda do processo 1
+O processo 0 obtém info sobre o processo 3 vinda do processo 1
+O processo 0 obtém info sobre o processo 4 vinda do processo 1
+O processo 0 obtém info sobre o processo 5 vinda do processo 1
+O processo 0 obtém info sobre o processo 6 vinda do processo 1
+O processo 0 obtém info sobre o processo 7 vinda do processo 1
+O processo 0 obtém info sobre o processo 8 vinda do processo 1
+O processo 0 obtém info sobre o processo 9 vinda do processo 1
+State(0) no tempo 32.0:
+State[0] = 0
+State[1] = 0
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 1 testou o processo 2 correto no tempo 32.0
+O processo 1 obtém info sobre o processo 3 vinda do processo 2
+O processo 1 obtém info sobre o processo 4 vinda do processo 2
+O processo 1 obtém info sobre o processo 5 vinda do processo 2
+O processo 1 obtém info sobre o processo 6 vinda do processo 2
+O processo 1 obtém info sobre o processo 7 vinda do processo 2
+O processo 1 obtém info sobre o processo 8 vinda do processo 2
+O processo 1 obtém info sobre o processo 9 vinda do processo 2
+O processo 1 obtém info sobre o processo 0 vinda do processo 2
+State(1) no tempo 32.0:
+State[0] = -1
+State[1] = 0
+State[2] = 0
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 2 testou o processo 3 correto no tempo 32.0
+O processo 2 obtém info sobre o processo 4 vinda do processo 3
+O processo 2 obtém info sobre o processo 5 vinda do processo 3
+O processo 2 obtém info sobre o processo 6 vinda do processo 3
+O processo 2 obtém info sobre o processo 7 vinda do processo 3
+O processo 2 obtém info sobre o processo 8 vinda do processo 3
+O processo 2 obtém info sobre o processo 9 vinda do processo 3
+O processo 2 obtém info sobre o processo 0 vinda do processo 3
+O processo 2 obtém info sobre o processo 1 vinda do processo 3
+State(2) no tempo 32.0:
+State[0] = -1
+State[1] = -1
+State[2] = 0
+State[3] = 0
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 3 testou o processo 4 correto no tempo 32.0
+O processo 3 obtém info sobre o processo 5 vinda do processo 4
+O processo 3 obtém info sobre o processo 6 vinda do processo 4
+O processo 3 obtém info sobre o processo 7 vinda do processo 4
+O processo 3 obtém info sobre o processo 8 vinda do processo 4
+O processo 3 obtém info sobre o processo 9 vinda do processo 4
+O processo 3 obtém info sobre o processo 0 vinda do processo 4
+O processo 3 obtém info sobre o processo 1 vinda do processo 4
+O processo 3 obtém info sobre o processo 2 vinda do processo 4
+State(3) no tempo 32.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = 0
+State[4] = 0
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 4 testou o processo 5 correto no tempo 32.0
+O processo 4 obtém info sobre o processo 6 vinda do processo 5
+O processo 4 obtém info sobre o processo 7 vinda do processo 5
+O processo 4 obtém info sobre o processo 8 vinda do processo 5
+O processo 4 obtém info sobre o processo 9 vinda do processo 5
+O processo 4 obtém info sobre o processo 0 vinda do processo 5
+O processo 4 obtém info sobre o processo 1 vinda do processo 5
+O processo 4 obtém info sobre o processo 2 vinda do processo 5
+O processo 4 obtém info sobre o processo 3 vinda do processo 5
+State(4) no tempo 32.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = 0
+State[5] = 0
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 5 testou o processo 6 correto no tempo 32.0
+O processo 5 obtém info sobre o processo 7 vinda do processo 6
+O processo 5 obtém info sobre o processo 8 vinda do processo 6
+O processo 5 obtém info sobre o processo 9 vinda do processo 6
+O processo 5 obtém info sobre o processo 0 vinda do processo 6
+O processo 5 obtém info sobre o processo 1 vinda do processo 6
+O processo 5 obtém info sobre o processo 2 vinda do processo 6
+O processo 5 obtém info sobre o processo 3 vinda do processo 6
+O processo 5 obtém info sobre o processo 4 vinda do processo 6
+State(5) no tempo 32.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = 0
+State[6] = 0
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 6 testou o processo 7 correto no tempo 32.0
+O processo 6 obtém info sobre o processo 8 vinda do processo 7
+O processo 6 obtém info sobre o processo 9 vinda do processo 7
+O processo 6 obtém info sobre o processo 0 vinda do processo 7
+O processo 6 obtém info sobre o processo 1 vinda do processo 7
+O processo 6 obtém info sobre o processo 2 vinda do processo 7
+O processo 6 obtém info sobre o processo 3 vinda do processo 7
+O processo 6 obtém info sobre o processo 4 vinda do processo 7
+O processo 6 obtém info sobre o processo 5 vinda do processo 7
+State(6) no tempo 32.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = 0
+State[7] = 0
+State[8] = -1
+State[9] = -1
+
+O processo 7 testou o processo 8 correto no tempo 32.0
+O processo 7 obtém info sobre o processo 9 vinda do processo 8
+O processo 7 obtém info sobre o processo 0 vinda do processo 8
+O processo 7 obtém info sobre o processo 1 vinda do processo 8
+O processo 7 obtém info sobre o processo 2 vinda do processo 8
+O processo 7 obtém info sobre o processo 3 vinda do processo 8
+O processo 7 obtém info sobre o processo 4 vinda do processo 8
+O processo 7 obtém info sobre o processo 5 vinda do processo 8
+O processo 7 obtém info sobre o processo 6 vinda do processo 8
+State(7) no tempo 32.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = 0
+State[8] = 0
+State[9] = -1
+
+O processo 8 testou o processo 9 correto no tempo 32.0
+O processo 8 obtém info sobre o processo 0 vinda do processo 9
+O processo 8 obtém info sobre o processo 1 vinda do processo 9
+O processo 8 obtém info sobre o processo 2 vinda do processo 9
+O processo 8 obtém info sobre o processo 3 vinda do processo 9
+O processo 8 obtém info sobre o processo 4 vinda do processo 9
+O processo 8 obtém info sobre o processo 5 vinda do processo 9
+O processo 8 obtém info sobre o processo 6 vinda do processo 9
+O processo 8 obtém info sobre o processo 7 vinda do processo 9
+State(8) no tempo 32.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = 0
+State[9] = 0
+
+O processo 9 testou o processo 0 correto no tempo 32.0
+O processo 9 obtém info sobre o processo 1 vinda do processo 0
+O processo 9 obtém info sobre o processo 2 vinda do processo 0
+O processo 9 obtém info sobre o processo 3 vinda do processo 0
+O processo 9 obtém info sobre o processo 4 vinda do processo 0
+O processo 9 obtém info sobre o processo 5 vinda do processo 0
+O processo 9 obtém info sobre o processo 6 vinda do processo 0
+O processo 9 obtém info sobre o processo 7 vinda do processo 0
+O processo 9 obtém info sobre o processo 8 vinda do processo 0
+State(9) no tempo 32.0:
+State[0] = 0
+State[1] = 0
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = 0
+
+O processo 0 testou o processo 1 correto no tempo 62.0
+O processo 0 obtém info sobre o processo 2 vinda do processo 1
+O processo 0 obtém info sobre o processo 3 vinda do processo 1
+O processo 0 obtém info sobre o processo 4 vinda do processo 1
+O processo 0 obtém info sobre o processo 5 vinda do processo 1
+O processo 0 obtém info sobre o processo 6 vinda do processo 1
+O processo 0 obtém info sobre o processo 7 vinda do processo 1
+O processo 0 obtém info sobre o processo 8 vinda do processo 1
+O processo 0 obtém info sobre o processo 9 vinda do processo 1
+State(0) no tempo 62.0:
+State[0] = 0
+State[1] = 0
+State[2] = 0
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 1 testou o processo 2 correto no tempo 62.0
+O processo 1 obtém info sobre o processo 3 vinda do processo 2
+O processo 1 obtém info sobre o processo 4 vinda do processo 2
+O processo 1 obtém info sobre o processo 5 vinda do processo 2
+O processo 1 obtém info sobre o processo 6 vinda do processo 2
+O processo 1 obtém info sobre o processo 7 vinda do processo 2
+O processo 1 obtém info sobre o processo 8 vinda do processo 2
+O processo 1 obtém info sobre o processo 9 vinda do processo 2
+O processo 1 obtém info sobre o processo 0 vinda do processo 2
+State(1) no tempo 62.0:
+State[0] = -1
+State[1] = 0
+State[2] = 0
+State[3] = 0
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 2 testou o processo 3 correto no tempo 62.0
+O processo 2 obtém info sobre o processo 4 vinda do processo 3
+O processo 2 obtém info sobre o processo 5 vinda do processo 3
+O processo 2 obtém info sobre o processo 6 vinda do processo 3
+O processo 2 obtém info sobre o processo 7 vinda do processo 3
+O processo 2 obtém info sobre o processo 8 vinda do processo 3
+O processo 2 obtém info sobre o processo 9 vinda do processo 3
+O processo 2 obtém info sobre o processo 0 vinda do processo 3
+O processo 2 obtém info sobre o processo 1 vinda do processo 3
+State(2) no tempo 62.0:
+State[0] = -1
+State[1] = -1
+State[2] = 0
+State[3] = 0
+State[4] = 0
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 3 testou o processo 4 correto no tempo 62.0
+O processo 3 obtém info sobre o processo 5 vinda do processo 4
+O processo 3 obtém info sobre o processo 6 vinda do processo 4
+O processo 3 obtém info sobre o processo 7 vinda do processo 4
+O processo 3 obtém info sobre o processo 8 vinda do processo 4
+O processo 3 obtém info sobre o processo 9 vinda do processo 4
+O processo 3 obtém info sobre o processo 0 vinda do processo 4
+O processo 3 obtém info sobre o processo 1 vinda do processo 4
+O processo 3 obtém info sobre o processo 2 vinda do processo 4
+State(3) no tempo 62.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = 0
+State[4] = 0
+State[5] = 0
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 4 testou o processo 5 correto no tempo 62.0
+O processo 4 obtém info sobre o processo 6 vinda do processo 5
+O processo 4 obtém info sobre o processo 7 vinda do processo 5
+O processo 4 obtém info sobre o processo 8 vinda do processo 5
+O processo 4 obtém info sobre o processo 9 vinda do processo 5
+O processo 4 obtém info sobre o processo 0 vinda do processo 5
+O processo 4 obtém info sobre o processo 1 vinda do processo 5
+O processo 4 obtém info sobre o processo 2 vinda do processo 5
+O processo 4 obtém info sobre o processo 3 vinda do processo 5
+State(4) no tempo 62.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = 0
+State[5] = 0
+State[6] = 0
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 5 testou o processo 6 correto no tempo 62.0
+O processo 5 obtém info sobre o processo 7 vinda do processo 6
+O processo 5 obtém info sobre o processo 8 vinda do processo 6
+O processo 5 obtém info sobre o processo 9 vinda do processo 6
+O processo 5 obtém info sobre o processo 0 vinda do processo 6
+O processo 5 obtém info sobre o processo 1 vinda do processo 6
+O processo 5 obtém info sobre o processo 2 vinda do processo 6
+O processo 5 obtém info sobre o processo 3 vinda do processo 6
+O processo 5 obtém info sobre o processo 4 vinda do processo 6
+State(5) no tempo 62.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = 0
+State[6] = 0
+State[7] = 0
+State[8] = -1
+State[9] = -1
+
+O processo 6 testou o processo 7 correto no tempo 62.0
+O processo 6 obtém info sobre o processo 8 vinda do processo 7
+O processo 6 obtém info sobre o processo 9 vinda do processo 7
+O processo 6 obtém info sobre o processo 0 vinda do processo 7
+O processo 6 obtém info sobre o processo 1 vinda do processo 7
+O processo 6 obtém info sobre o processo 2 vinda do processo 7
+O processo 6 obtém info sobre o processo 3 vinda do processo 7
+O processo 6 obtém info sobre o processo 4 vinda do processo 7
+O processo 6 obtém info sobre o processo 5 vinda do processo 7
+State(6) no tempo 62.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = 0
+State[7] = 0
+State[8] = 0
+State[9] = -1
+
+O processo 7 testou o processo 8 correto no tempo 62.0
+O processo 7 obtém info sobre o processo 9 vinda do processo 8
+O processo 7 obtém info sobre o processo 0 vinda do processo 8
+O processo 7 obtém info sobre o processo 1 vinda do processo 8
+O processo 7 obtém info sobre o processo 2 vinda do processo 8
+O processo 7 obtém info sobre o processo 3 vinda do processo 8
+O processo 7 obtém info sobre o processo 4 vinda do processo 8
+O processo 7 obtém info sobre o processo 5 vinda do processo 8
+O processo 7 obtém info sobre o processo 6 vinda do processo 8
+State(7) no tempo 62.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = 0
+State[8] = 0
+State[9] = 0
+
+O processo 8 testou o processo 9 correto no tempo 62.0
+O processo 8 obtém info sobre o processo 0 vinda do processo 9
+O processo 8 obtém info sobre o processo 1 vinda do processo 9
+O processo 8 obtém info sobre o processo 2 vinda do processo 9
+O processo 8 obtém info sobre o processo 3 vinda do processo 9
+O processo 8 obtém info sobre o processo 4 vinda do processo 9
+O processo 8 obtém info sobre o processo 5 vinda do processo 9
+O processo 8 obtém info sobre o processo 6 vinda do processo 9
+O processo 8 obtém info sobre o processo 7 vinda do processo 9
+State(8) no tempo 62.0:
+State[0] = 0
+State[1] = 0
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = 0
+State[9] = 0
+
+O processo 9 testou o processo 0 correto no tempo 62.0
+O processo 9 obtém info sobre o processo 1 vinda do processo 0
+O processo 9 obtém info sobre o processo 2 vinda do processo 0
+O processo 9 obtém info sobre o processo 3 vinda do processo 0
+O processo 9 obtém info sobre o processo 4 vinda do processo 0
+O processo 9 obtém info sobre o processo 5 vinda do processo 0
+O processo 9 obtém info sobre o processo 6 vinda do processo 0
+O processo 9 obtém info sobre o processo 7 vinda do processo 0
+O processo 9 obtém info sobre o processo 8 vinda do processo 0
+State(9) no tempo 62.0:
+State[0] = 0
+State[1] = 0
+State[2] = 0
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = 0
+
+O processo 0 testou o processo 1 correto no tempo 92.0
+O processo 0 obtém info sobre o processo 2 vinda do processo 1
+O processo 0 obtém info sobre o processo 3 vinda do processo 1
+O processo 0 obtém info sobre o processo 4 vinda do processo 1
+O processo 0 obtém info sobre o processo 5 vinda do processo 1
+O processo 0 obtém info sobre o processo 6 vinda do processo 1
+O processo 0 obtém info sobre o processo 7 vinda do processo 1
+O processo 0 obtém info sobre o processo 8 vinda do processo 1
+O processo 0 obtém info sobre o processo 9 vinda do processo 1
+State(0) no tempo 92.0:
+State[0] = 0
+State[1] = 0
+State[2] = 0
+State[3] = 0
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 1 testou o processo 2 correto no tempo 92.0
+O processo 1 obtém info sobre o processo 3 vinda do processo 2
+O processo 1 obtém info sobre o processo 4 vinda do processo 2
+O processo 1 obtém info sobre o processo 5 vinda do processo 2
+O processo 1 obtém info sobre o processo 6 vinda do processo 2
+O processo 1 obtém info sobre o processo 7 vinda do processo 2
+O processo 1 obtém info sobre o processo 8 vinda do processo 2
+O processo 1 obtém info sobre o processo 9 vinda do processo 2
+O processo 1 obtém info sobre o processo 0 vinda do processo 2
+State(1) no tempo 92.0:
+State[0] = -1
+State[1] = 0
+State[2] = 0
+State[3] = 0
+State[4] = 0
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 2 testou o processo 3 correto no tempo 92.0
+O processo 2 obtém info sobre o processo 4 vinda do processo 3
+O processo 2 obtém info sobre o processo 5 vinda do processo 3
+O processo 2 obtém info sobre o processo 6 vinda do processo 3
+O processo 2 obtém info sobre o processo 7 vinda do processo 3
+O processo 2 obtém info sobre o processo 8 vinda do processo 3
+O processo 2 obtém info sobre o processo 9 vinda do processo 3
+O processo 2 obtém info sobre o processo 0 vinda do processo 3
+O processo 2 obtém info sobre o processo 1 vinda do processo 3
+State(2) no tempo 92.0:
+State[0] = -1
+State[1] = -1
+State[2] = 0
+State[3] = 0
+State[4] = 0
+State[5] = 0
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 3 testou o processo 4 correto no tempo 92.0
+O processo 3 obtém info sobre o processo 5 vinda do processo 4
+O processo 3 obtém info sobre o processo 6 vinda do processo 4
+O processo 3 obtém info sobre o processo 7 vinda do processo 4
+O processo 3 obtém info sobre o processo 8 vinda do processo 4
+O processo 3 obtém info sobre o processo 9 vinda do processo 4
+O processo 3 obtém info sobre o processo 0 vinda do processo 4
+O processo 3 obtém info sobre o processo 1 vinda do processo 4
+O processo 3 obtém info sobre o processo 2 vinda do processo 4
+State(3) no tempo 92.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = 0
+State[4] = 0
+State[5] = 0
+State[6] = 0
+State[7] = -1
+State[8] = -1
+State[9] = -1
+
+O processo 4 testou o processo 5 correto no tempo 92.0
+O processo 4 obtém info sobre o processo 6 vinda do processo 5
+O processo 4 obtém info sobre o processo 7 vinda do processo 5
+O processo 4 obtém info sobre o processo 8 vinda do processo 5
+O processo 4 obtém info sobre o processo 9 vinda do processo 5
+O processo 4 obtém info sobre o processo 0 vinda do processo 5
+O processo 4 obtém info sobre o processo 1 vinda do processo 5
+O processo 4 obtém info sobre o processo 2 vinda do processo 5
+O processo 4 obtém info sobre o processo 3 vinda do processo 5
+State(4) no tempo 92.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = 0
+State[5] = 0
+State[6] = 0
+State[7] = 0
+State[8] = -1
+State[9] = -1
+
+O processo 5 testou o processo 6 correto no tempo 92.0
+O processo 5 obtém info sobre o processo 7 vinda do processo 6
+O processo 5 obtém info sobre o processo 8 vinda do processo 6
+O processo 5 obtém info sobre o processo 9 vinda do processo 6
+O processo 5 obtém info sobre o processo 0 vinda do processo 6
+O processo 5 obtém info sobre o processo 1 vinda do processo 6
+O processo 5 obtém info sobre o processo 2 vinda do processo 6
+O processo 5 obtém info sobre o processo 3 vinda do processo 6
+O processo 5 obtém info sobre o processo 4 vinda do processo 6
+State(5) no tempo 92.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = 0
+State[6] = 0
+State[7] = 0
+State[8] = 0
+State[9] = -1
+
+O processo 6 testou o processo 7 correto no tempo 92.0
+O processo 6 obtém info sobre o processo 8 vinda do processo 7
+O processo 6 obtém info sobre o processo 9 vinda do processo 7
+O processo 6 obtém info sobre o processo 0 vinda do processo 7
+O processo 6 obtém info sobre o processo 1 vinda do processo 7
+O processo 6 obtém info sobre o processo 2 vinda do processo 7
+O processo 6 obtém info sobre o processo 3 vinda do processo 7
+O processo 6 obtém info sobre o processo 4 vinda do processo 7
+O processo 6 obtém info sobre o processo 5 vinda do processo 7
+State(6) no tempo 92.0:
+State[0] = -1
+State[1] = -1
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = 0
+State[7] = 0
+State[8] = 0
+State[9] = 0
+
+O processo 7 testou o processo 8 correto no tempo 92.0
+O processo 7 obtém info sobre o processo 9 vinda do processo 8
+O processo 7 obtém info sobre o processo 0 vinda do processo 8
+O processo 7 obtém info sobre o processo 1 vinda do processo 8
+O processo 7 obtém info sobre o processo 2 vinda do processo 8
+O processo 7 obtém info sobre o processo 3 vinda do processo 8
+O processo 7 obtém info sobre o processo 4 vinda do processo 8
+O processo 7 obtém info sobre o processo 5 vinda do processo 8
+O processo 7 obtém info sobre o processo 6 vinda do processo 8
+State(7) no tempo 92.0:
+State[0] = 0
+State[1] = 0
+State[2] = -1
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = 0
+State[8] = 0
+State[9] = 0
+
+O processo 8 testou o processo 9 correto no tempo 92.0
+O processo 8 obtém info sobre o processo 0 vinda do processo 9
+O processo 8 obtém info sobre o processo 1 vinda do processo 9
+O processo 8 obtém info sobre o processo 2 vinda do processo 9
+O processo 8 obtém info sobre o processo 3 vinda do processo 9
+O processo 8 obtém info sobre o processo 4 vinda do processo 9
+O processo 8 obtém info sobre o processo 5 vinda do processo 9
+O processo 8 obtém info sobre o processo 6 vinda do processo 9
+O processo 8 obtém info sobre o processo 7 vinda do processo 9
+State(8) no tempo 92.0:
+State[0] = 0
+State[1] = 0
+State[2] = 0
+State[3] = -1
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = 0
+State[9] = 0
+
+O processo 9 testou o processo 0 correto no tempo 92.0
+O processo 9 obtém info sobre o processo 1 vinda do processo 0
+O processo 9 obtém info sobre o processo 2 vinda do processo 0
+O processo 9 obtém info sobre o processo 3 vinda do processo 0
+O processo 9 obtém info sobre o processo 4 vinda do processo 0
+O processo 9 obtém info sobre o processo 5 vinda do processo 0
+O processo 9 obtém info sobre o processo 6 vinda do processo 0
+O processo 9 obtém info sobre o processo 7 vinda do processo 0
+O processo 9 obtém info sobre o processo 8 vinda do processo 0
+State(9) no tempo 92.0:
+State[0] = 0
+State[1] = 0
+State[2] = 0
+State[3] = 0
+State[4] = -1
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = 0
+
+O processo 0 testou o processo 1 correto no tempo 122.0
+O processo 0 obtém info sobre o processo 2 vinda do processo 1
+O processo 0 obtém info sobre o processo 3 vinda do processo 1
+O processo 0 obtém info sobre o processo 4 vinda do processo 1
+O processo 0 obtém info sobre o processo 5 vinda do processo 1
+O processo 0 obtém info sobre o processo 6 vinda do processo 1
+O processo 0 obtém info sobre o processo 7 vinda do processo 1
+O processo 0 obtém info sobre o processo 8 vinda do processo 1
+O processo 0 obtém info sobre o processo 9 vinda do processo 1
+State(0) no tempo 122.0:
+State[0] = 0
+State[1] = 0
+State[2] = 0
+State[3] = 0
+State[4] = 0
+State[5] = -1
+State[6] = -1
+State[7] = -1
+State[8] = -1
+State[9] = -1
+

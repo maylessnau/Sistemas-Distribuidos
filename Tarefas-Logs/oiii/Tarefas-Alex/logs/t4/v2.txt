@@ -1,0 +1,330 @@
+Oiii!!! Sou o processo 0 e estou testando no tempo 30.0
+Obaaa!! O processo 0 testou o processo 1 e ele está correto no tempo 30.0
+Sou o processo 0 e esse são meus estados:
+Vetor de estados PROCESSO 0 no tempo 30.0: [ 0, 0, -1, -1, -1, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 1 tem salvo passar pra mim (processo 0), vamos ver como fica!!:
+Vetor de estados PROCESSO 0 no tempo 30.0: [ 0, 0, -1, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 1 e estou testando no tempo 30.0
+Obaaa!! O processo 1 testou o processo 2 e ele está correto no tempo 30.0
+Sou o processo 1 e esse são meus estados:
+Vetor de estados PROCESSO 1 no tempo 30.0: [ -1, 0, 0, -1, -1, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 2 tem salvo passar pra mim (processo 1), vamos ver como fica!!:
+Vetor de estados PROCESSO 1 no tempo 30.0: [ -1, 0, 0, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 2 e estou testando no tempo 30.0
+Obaaa!! O processo 2 testou o processo 3 e ele está correto no tempo 30.0
+Sou o processo 2 e esse são meus estados:
+Vetor de estados PROCESSO 2 no tempo 30.0: [ -1, -1, 0, 0, -1, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 3 tem salvo passar pra mim (processo 2), vamos ver como fica!!:
+Vetor de estados PROCESSO 2 no tempo 30.0: [ -1, -1, 0, 0, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 3 e estou testando no tempo 30.0
+Obaaa!! O processo 3 testou o processo 4 e ele está correto no tempo 30.0
+Sou o processo 3 e esse são meus estados:
+Vetor de estados PROCESSO 3 no tempo 30.0: [ -1, -1, -1, 0, 0, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 4 tem salvo passar pra mim (processo 3), vamos ver como fica!!:
+Vetor de estados PROCESSO 3 no tempo 30.0: [ -1, -1, -1, 0, 0, -1, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 4 e estou testando no tempo 30.0
+Obaaa!! O processo 4 testou o processo 5 e ele está correto no tempo 30.0
+Sou o processo 4 e esse são meus estados:
+Vetor de estados PROCESSO 4 no tempo 30.0: [ -1, -1, -1, -1, 0, 0, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 5 tem salvo passar pra mim (processo 4), vamos ver como fica!!:
+Vetor de estados PROCESSO 4 no tempo 30.0: [ -1, -1, -1, -1, 0, 0, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 5 e estou testando no tempo 30.0
+Obaaa!! O processo 5 testou o processo 6 e ele está correto no tempo 30.0
+Sou o processo 5 e esse são meus estados:
+Vetor de estados PROCESSO 5 no tempo 30.0: [ -1, -1, -1, -1, -1, 0, 0, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 6 tem salvo passar pra mim (processo 5), vamos ver como fica!!:
+Vetor de estados PROCESSO 5 no tempo 30.0: [ -1, -1, -1, -1, -1, 0, 0, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 6 e estou testando no tempo 30.0
+Obaaa!! O processo 6 testou o processo 7 e ele está correto no tempo 30.0
+Sou o processo 6 e esse são meus estados:
+Vetor de estados PROCESSO 6 no tempo 30.0: [ -1, -1, -1, -1, -1, -1, 0, 0, -1, -1 ]
+
+Vou pegar todos os estados que o processo 7 tem salvo passar pra mim (processo 6), vamos ver como fica!!:
+Vetor de estados PROCESSO 6 no tempo 30.0: [ -1, -1, -1, -1, -1, -1, 0, 0, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 7 e estou testando no tempo 30.0
+Obaaa!! O processo 7 testou o processo 8 e ele está correto no tempo 30.0
+Sou o processo 7 e esse são meus estados:
+Vetor de estados PROCESSO 7 no tempo 30.0: [ -1, -1, -1, -1, -1, -1, -1, 0, 0, -1 ]
+
+Vou pegar todos os estados que o processo 8 tem salvo passar pra mim (processo 7), vamos ver como fica!!:
+Vetor de estados PROCESSO 7 no tempo 30.0: [ -1, -1, -1, -1, -1, -1, -1, 0, 0, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 8 e estou testando no tempo 30.0
+Obaaa!! O processo 8 testou o processo 9 e ele está correto no tempo 30.0
+Sou o processo 8 e esse são meus estados:
+Vetor de estados PROCESSO 8 no tempo 30.0: [ -1, -1, -1, -1, -1, -1, -1, -1, 0, 0 ]
+
+Vou pegar todos os estados que o processo 9 tem salvo passar pra mim (processo 8), vamos ver como fica!!:
+Vetor de estados PROCESSO 8 no tempo 30.0: [ -1, -1, -1, -1, -1, -1, -1, -1, 0, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 9 e estou testando no tempo 30.0
+Obaaa!! O processo 9 testou o processo 0 e ele está correto no tempo 30.0
+Sou o processo 9 e esse são meus estados:
+Vetor de estados PROCESSO 9 no tempo 30.0: [ 0, -1, -1, -1, -1, -1, -1, -1, -1, 0 ]
+
+Vou pegar todos os estados que o processo 0 tem salvo passar pra mim (processo 9), vamos ver como fica!!:
+Vetor de estados PROCESSO 9 no tempo 30.0: [ 0, 0, -1, -1, -1, -1, -1, -1, -1, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+O processo 1 falhou no tempo 31.0
+------------------------------FIM DO EVENTO------------------------------
+
+O processo 4 falhou no tempo 31.0
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 0 e estou testando no tempo 60.0
+Nãooo! O processo 0 testou o processo 1 e ele está falho no tempo 60.0
+Obaaa!! O processo 0 testou o processo 2 e ele está correto no tempo 60.0
+Sou o processo 0 e esse são meus estados:
+Vetor de estados PROCESSO 0 no tempo 60.0: [ 0, 1, 0, -1, -1, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 2 tem salvo passar pra mim (processo 0), vamos ver como fica!!:
+Vetor de estados PROCESSO 0 no tempo 60.0: [ 0, 1, 0, 0, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Aff!! Sou o processo 1 e não posso realizar testes pois estou falho no tempo 60.0!!
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 2 e estou testando no tempo 60.0
+Obaaa!! O processo 2 testou o processo 3 e ele está correto no tempo 60.0
+Sou o processo 2 e esse são meus estados:
+Vetor de estados PROCESSO 2 no tempo 60.0: [ -1, -1, 0, 0, -1, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 3 tem salvo passar pra mim (processo 2), vamos ver como fica!!:
+Vetor de estados PROCESSO 2 no tempo 60.0: [ -1, -1, 0, 0, 0, -1, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 3 e estou testando no tempo 60.0
+Nãooo! O processo 3 testou o processo 4 e ele está falho no tempo 60.0
+Obaaa!! O processo 3 testou o processo 5 e ele está correto no tempo 60.0
+Sou o processo 3 e esse são meus estados:
+Vetor de estados PROCESSO 3 no tempo 60.0: [ -1, -1, -1, 0, 1, 0, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 5 tem salvo passar pra mim (processo 3), vamos ver como fica!!:
+Vetor de estados PROCESSO 3 no tempo 60.0: [ -1, -1, -1, 0, 1, 0, 0, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Aff!! Sou o processo 4 e não posso realizar testes pois estou falho no tempo 60.0!!
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 5 e estou testando no tempo 60.0
+Obaaa!! O processo 5 testou o processo 6 e ele está correto no tempo 60.0
+Sou o processo 5 e esse são meus estados:
+Vetor de estados PROCESSO 5 no tempo 60.0: [ -1, -1, -1, -1, -1, 0, 0, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 6 tem salvo passar pra mim (processo 5), vamos ver como fica!!:
+Vetor de estados PROCESSO 5 no tempo 60.0: [ -1, -1, -1, -1, -1, 0, 0, 0, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 6 e estou testando no tempo 60.0
+Obaaa!! O processo 6 testou o processo 7 e ele está correto no tempo 60.0
+Sou o processo 6 e esse são meus estados:
+Vetor de estados PROCESSO 6 no tempo 60.0: [ -1, -1, -1, -1, -1, -1, 0, 0, -1, -1 ]
+
+Vou pegar todos os estados que o processo 7 tem salvo passar pra mim (processo 6), vamos ver como fica!!:
+Vetor de estados PROCESSO 6 no tempo 60.0: [ -1, -1, -1, -1, -1, -1, 0, 0, 0, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 7 e estou testando no tempo 60.0
+Obaaa!! O processo 7 testou o processo 8 e ele está correto no tempo 60.0
+Sou o processo 7 e esse são meus estados:
+Vetor de estados PROCESSO 7 no tempo 60.0: [ -1, -1, -1, -1, -1, -1, -1, 0, 0, -1 ]
+
+Vou pegar todos os estados que o processo 8 tem salvo passar pra mim (processo 7), vamos ver como fica!!:
+Vetor de estados PROCESSO 7 no tempo 60.0: [ -1, -1, -1, -1, -1, -1, -1, 0, 0, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 8 e estou testando no tempo 60.0
+Obaaa!! O processo 8 testou o processo 9 e ele está correto no tempo 60.0
+Sou o processo 8 e esse são meus estados:
+Vetor de estados PROCESSO 8 no tempo 60.0: [ -1, -1, -1, -1, -1, -1, -1, -1, 0, 0 ]
+
+Vou pegar todos os estados que o processo 9 tem salvo passar pra mim (processo 8), vamos ver como fica!!:
+Vetor de estados PROCESSO 8 no tempo 60.0: [ 0, 0, -1, -1, -1, -1, -1, -1, 0, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 9 e estou testando no tempo 60.0
+Obaaa!! O processo 9 testou o processo 0 e ele está correto no tempo 60.0
+Sou o processo 9 e esse são meus estados:
+Vetor de estados PROCESSO 9 no tempo 60.0: [ 0, 0, -1, -1, -1, -1, -1, -1, -1, 0 ]
+
+Vou pegar todos os estados que o processo 0 tem salvo passar pra mim (processo 9), vamos ver como fica!!:
+Vetor de estados PROCESSO 9 no tempo 60.0: [ 0, 1, 0, 0, -1, -1, -1, -1, -1, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Viva!! O processo 1 recuperou no tempo 61.0
+------------------------------FIM DO EVENTO------------------------------
+
+Viva!! O processo 4 recuperou no tempo 61.0
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 1 e estou testando no tempo 62.0
+Obaaa!! O processo 1 testou o processo 2 e ele está correto no tempo 62.0
+Sou o processo 1 e esse são meus estados:
+Vetor de estados PROCESSO 1 no tempo 62.0: [ -1, 0, 0, -1, -1, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 2 tem salvo passar pra mim (processo 1), vamos ver como fica!!:
+Vetor de estados PROCESSO 1 no tempo 62.0: [ -1, 0, 0, 0, 0, -1, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 4 e estou testando no tempo 62.0
+Obaaa!! O processo 4 testou o processo 5 e ele está correto no tempo 62.0
+Sou o processo 4 e esse são meus estados:
+Vetor de estados PROCESSO 4 no tempo 62.0: [ -1, -1, -1, -1, 0, 0, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 5 tem salvo passar pra mim (processo 4), vamos ver como fica!!:
+Vetor de estados PROCESSO 4 no tempo 62.0: [ -1, -1, -1, -1, 0, 0, 0, 0, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 0 e estou testando no tempo 90.0
+Obaaa!! O processo 0 testou o processo 1 e ele está correto no tempo 90.0
+Sou o processo 0 e esse são meus estados:
+Vetor de estados PROCESSO 0 no tempo 90.0: [ 0, 0, 0, 0, -1, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 1 tem salvo passar pra mim (processo 0), vamos ver como fica!!:
+Vetor de estados PROCESSO 0 no tempo 90.0: [ 0, 0, 0, 0, 0, -1, -1, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 2 e estou testando no tempo 90.0
+Obaaa!! O processo 2 testou o processo 3 e ele está correto no tempo 90.0
+Sou o processo 2 e esse são meus estados:
+Vetor de estados PROCESSO 2 no tempo 90.0: [ -1, -1, 0, 0, 0, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 3 tem salvo passar pra mim (processo 2), vamos ver como fica!!:
+Vetor de estados PROCESSO 2 no tempo 90.0: [ -1, -1, 0, 0, 1, 0, 0, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 3 e estou testando no tempo 90.0
+Obaaa!! O processo 3 testou o processo 4 e ele está correto no tempo 90.0
+Sou o processo 3 e esse são meus estados:
+Vetor de estados PROCESSO 3 no tempo 90.0: [ -1, -1, -1, 0, 0, 0, 0, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 4 tem salvo passar pra mim (processo 3), vamos ver como fica!!:
+Vetor de estados PROCESSO 3 no tempo 90.0: [ -1, -1, -1, 0, 0, 0, 0, 0, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 5 e estou testando no tempo 90.0
+Obaaa!! O processo 5 testou o processo 6 e ele está correto no tempo 90.0
+Sou o processo 5 e esse são meus estados:
+Vetor de estados PROCESSO 5 no tempo 90.0: [ -1, -1, -1, -1, -1, 0, 0, 0, -1, -1 ]
+
+Vou pegar todos os estados que o processo 6 tem salvo passar pra mim (processo 5), vamos ver como fica!!:
+Vetor de estados PROCESSO 5 no tempo 90.0: [ -1, -1, -1, -1, -1, 0, 0, 0, 0, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 6 e estou testando no tempo 90.0
+Obaaa!! O processo 6 testou o processo 7 e ele está correto no tempo 90.0
+Sou o processo 6 e esse são meus estados:
+Vetor de estados PROCESSO 6 no tempo 90.0: [ -1, -1, -1, -1, -1, -1, 0, 0, 0, -1 ]
+
+Vou pegar todos os estados que o processo 7 tem salvo passar pra mim (processo 6), vamos ver como fica!!:
+Vetor de estados PROCESSO 6 no tempo 90.0: [ -1, -1, -1, -1, -1, -1, 0, 0, 0, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 7 e estou testando no tempo 90.0
+Obaaa!! O processo 7 testou o processo 8 e ele está correto no tempo 90.0
+Sou o processo 7 e esse são meus estados:
+Vetor de estados PROCESSO 7 no tempo 90.0: [ -1, -1, -1, -1, -1, -1, -1, 0, 0, 0 ]
+
+Vou pegar todos os estados que o processo 8 tem salvo passar pra mim (processo 7), vamos ver como fica!!:
+Vetor de estados PROCESSO 7 no tempo 90.0: [ 0, 0, -1, -1, -1, -1, -1, 0, 0, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 8 e estou testando no tempo 90.0
+Obaaa!! O processo 8 testou o processo 9 e ele está correto no tempo 90.0
+Sou o processo 8 e esse são meus estados:
+Vetor de estados PROCESSO 8 no tempo 90.0: [ 0, 0, -1, -1, -1, -1, -1, -1, 0, 0 ]
+
+Vou pegar todos os estados que o processo 9 tem salvo passar pra mim (processo 8), vamos ver como fica!!:
+Vetor de estados PROCESSO 8 no tempo 90.0: [ 0, 1, 0, 0, -1, -1, -1, -1, 0, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 9 e estou testando no tempo 90.0
+Obaaa!! O processo 9 testou o processo 0 e ele está correto no tempo 90.0
+Sou o processo 9 e esse são meus estados:
+Vetor de estados PROCESSO 9 no tempo 90.0: [ 0, 1, 0, 0, -1, -1, -1, -1, -1, 0 ]
+
+Vou pegar todos os estados que o processo 0 tem salvo passar pra mim (processo 9), vamos ver como fica!!:
+Vetor de estados PROCESSO 9 no tempo 90.0: [ 0, 0, 0, 0, 0, -1, -1, -1, -1, 0 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 1 e estou testando no tempo 92.0
+Obaaa!! O processo 1 testou o processo 2 e ele está correto no tempo 92.0
+Sou o processo 1 e esse são meus estados:
+Vetor de estados PROCESSO 1 no tempo 92.0: [ -1, 0, 0, 0, 0, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 2 tem salvo passar pra mim (processo 1), vamos ver como fica!!:
+Vetor de estados PROCESSO 1 no tempo 92.0: [ -1, 0, 0, 0, 1, 0, 0, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 4 e estou testando no tempo 92.0
+Obaaa!! O processo 4 testou o processo 5 e ele está correto no tempo 92.0
+Sou o processo 4 e esse são meus estados:
+Vetor de estados PROCESSO 4 no tempo 92.0: [ -1, -1, -1, -1, 0, 0, 0, 0, -1, -1 ]
+
+Vou pegar todos os estados que o processo 5 tem salvo passar pra mim (processo 4), vamos ver como fica!!:
+Vetor de estados PROCESSO 4 no tempo 92.0: [ -1, -1, -1, -1, 0, 0, 0, 0, 0, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+
+Oiii!!! Sou o processo 0 e estou testando no tempo 120.0
+Obaaa!! O processo 0 testou o processo 1 e ele está correto no tempo 120.0
+Sou o processo 0 e esse são meus estados:
+Vetor de estados PROCESSO 0 no tempo 120.0: [ 0, 0, 0, 0, 0, -1, -1, -1, -1, -1 ]
+
+Vou pegar todos os estados que o processo 1 tem salvo passar pra mim (processo 0), vamos ver como fica!!:
+Vetor de estados PROCESSO 0 no tempo 120.0: [ 0, 0, 0, 0, 1, 0, 0, -1, -1, -1 ]
+
+------------------------------FIM DO EVENTO------------------------------
+

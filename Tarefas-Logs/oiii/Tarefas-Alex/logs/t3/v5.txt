@@ -1,0 +1,175 @@
+O processo 0 falhou no tempo  1.0
+O processo 1 falhou no tempo  1.0
+O processo 2 falhou no tempo  1.0
+O processo 3 falhou no tempo  1.0
+O processo 4 falhou no tempo  1.0
+O processo 5 falhou no tempo  1.0
+O processo 6 falhou no tempo  1.0
+O processo 7 falhou no tempo  1.0
+O processo 8 falhou no tempo  1.0
+O processo 9 falhou no tempo  1.0
+O processo 0 recuperou no tempo 31.0
+O processo 1 recuperou no tempo 31.0
+O processo 2 recuperou no tempo 31.0
+O processo 3 recuperou no tempo 31.0
+O processo 4 recuperou no tempo 31.0
+O processo 5 recuperou no tempo 31.0
+O processo 6 recuperou no tempo 31.0
+O processo 7 recuperou no tempo 31.0
+O processo 8 recuperou no tempo 31.0
+O processo 9 recuperou no tempo 31.0
+Sou o processo 0 e estou testando no tempo 32.0
+O processo 0 testou o processo 1 correto no tempo 32.0
+Vetor de estados PROCESSO 0 no tempo 32.0: [ 0, 0, -1, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 1 e estou testando no tempo 32.0
+O processo 1 testou o processo 2 correto no tempo 32.0
+Vetor de estados PROCESSO 1 no tempo 32.0: [ -1, 0, 0, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 2 e estou testando no tempo 32.0
+O processo 2 testou o processo 3 correto no tempo 32.0
+Vetor de estados PROCESSO 2 no tempo 32.0: [ -1, -1, 0, 0, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 3 e estou testando no tempo 32.0
+O processo 3 testou o processo 4 correto no tempo 32.0
+Vetor de estados PROCESSO 3 no tempo 32.0: [ -1, -1, -1, 0, 0, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 4 e estou testando no tempo 32.0
+O processo 4 testou o processo 5 correto no tempo 32.0
+Vetor de estados PROCESSO 4 no tempo 32.0: [ -1, -1, -1, -1, 0, 0, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 5 e estou testando no tempo 32.0
+O processo 5 testou o processo 6 correto no tempo 32.0
+Vetor de estados PROCESSO 5 no tempo 32.0: [ -1, -1, -1, -1, -1, 0, 0, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 6 e estou testando no tempo 32.0
+O processo 6 testou o processo 7 correto no tempo 32.0
+Vetor de estados PROCESSO 6 no tempo 32.0: [ -1, -1, -1, -1, -1, -1, 0, 0, -1, -1 ]
+
+------------------------------
+Sou o processo 7 e estou testando no tempo 32.0
+O processo 7 testou o processo 8 correto no tempo 32.0
+Vetor de estados PROCESSO 7 no tempo 32.0: [ -1, -1, -1, -1, -1, -1, -1, 0, 0, -1 ]
+
+------------------------------
+Sou o processo 8 e estou testando no tempo 32.0
+O processo 8 testou o processo 9 correto no tempo 32.0
+Vetor de estados PROCESSO 8 no tempo 32.0: [ -1, -1, -1, -1, -1, -1, -1, -1, 0, 0 ]
+
+------------------------------
+Sou o processo 9 e estou testando no tempo 32.0
+O processo 9 testou o processo 0 correto no tempo 32.0
+Vetor de estados PROCESSO 9 no tempo 32.0: [ 0, -1, -1, -1, -1, -1, -1, -1, -1, 0 ]
+
+------------------------------
+Sou o processo 0 e estou testando no tempo 62.0
+O processo 0 testou o processo 1 correto no tempo 62.0
+Vetor de estados PROCESSO 0 no tempo 62.0: [ 0, 0, -1, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 1 e estou testando no tempo 62.0
+O processo 1 testou o processo 2 correto no tempo 62.0
+Vetor de estados PROCESSO 1 no tempo 62.0: [ -1, 0, 0, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 2 e estou testando no tempo 62.0
+O processo 2 testou o processo 3 correto no tempo 62.0
+Vetor de estados PROCESSO 2 no tempo 62.0: [ -1, -1, 0, 0, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 3 e estou testando no tempo 62.0
+O processo 3 testou o processo 4 correto no tempo 62.0
+Vetor de estados PROCESSO 3 no tempo 62.0: [ -1, -1, -1, 0, 0, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 4 e estou testando no tempo 62.0
+O processo 4 testou o processo 5 correto no tempo 62.0
+Vetor de estados PROCESSO 4 no tempo 62.0: [ -1, -1, -1, -1, 0, 0, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 5 e estou testando no tempo 62.0
+O processo 5 testou o processo 6 correto no tempo 62.0
+Vetor de estados PROCESSO 5 no tempo 62.0: [ -1, -1, -1, -1, -1, 0, 0, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 6 e estou testando no tempo 62.0
+O processo 6 testou o processo 7 correto no tempo 62.0
+Vetor de estados PROCESSO 6 no tempo 62.0: [ -1, -1, -1, -1, -1, -1, 0, 0, -1, -1 ]
+
+------------------------------
+Sou o processo 7 e estou testando no tempo 62.0
+O processo 7 testou o processo 8 correto no tempo 62.0
+Vetor de estados PROCESSO 7 no tempo 62.0: [ -1, -1, -1, -1, -1, -1, -1, 0, 0, -1 ]
+
+------------------------------
+Sou o processo 8 e estou testando no tempo 62.0
+O processo 8 testou o processo 9 correto no tempo 62.0
+Vetor de estados PROCESSO 8 no tempo 62.0: [ -1, -1, -1, -1, -1, -1, -1, -1, 0, 0 ]
+
+------------------------------
+Sou o processo 9 e estou testando no tempo 62.0
+O processo 9 testou o processo 0 correto no tempo 62.0
+Vetor de estados PROCESSO 9 no tempo 62.0: [ 0, -1, -1, -1, -1, -1, -1, -1, -1, 0 ]
+
+------------------------------
+Sou o processo 0 e estou testando no tempo 92.0
+O processo 0 testou o processo 1 correto no tempo 92.0
+Vetor de estados PROCESSO 0 no tempo 92.0: [ 0, 0, -1, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 1 e estou testando no tempo 92.0
+O processo 1 testou o processo 2 correto no tempo 92.0
+Vetor de estados PROCESSO 1 no tempo 92.0: [ -1, 0, 0, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 2 e estou testando no tempo 92.0
+O processo 2 testou o processo 3 correto no tempo 92.0
+Vetor de estados PROCESSO 2 no tempo 92.0: [ -1, -1, 0, 0, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 3 e estou testando no tempo 92.0
+O processo 3 testou o processo 4 correto no tempo 92.0
+Vetor de estados PROCESSO 3 no tempo 92.0: [ -1, -1, -1, 0, 0, -1, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 4 e estou testando no tempo 92.0
+O processo 4 testou o processo 5 correto no tempo 92.0
+Vetor de estados PROCESSO 4 no tempo 92.0: [ -1, -1, -1, -1, 0, 0, -1, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 5 e estou testando no tempo 92.0
+O processo 5 testou o processo 6 correto no tempo 92.0
+Vetor de estados PROCESSO 5 no tempo 92.0: [ -1, -1, -1, -1, -1, 0, 0, -1, -1, -1 ]
+
+------------------------------
+Sou o processo 6 e estou testando no tempo 92.0
+O processo 6 testou o processo 7 correto no tempo 92.0
+Vetor de estados PROCESSO 6 no tempo 92.0: [ -1, -1, -1, -1, -1, -1, 0, 0, -1, -1 ]
+
+------------------------------
+Sou o processo 7 e estou testando no tempo 92.0
+O processo 7 testou o processo 8 correto no tempo 92.0
+Vetor de estados PROCESSO 7 no tempo 92.0: [ -1, -1, -1, -1, -1, -1, -1, 0, 0, -1 ]
+
+------------------------------
+Sou o processo 8 e estou testando no tempo 92.0
+O processo 8 testou o processo 9 correto no tempo 92.0
+Vetor de estados PROCESSO 8 no tempo 92.0: [ -1, -1, -1, -1, -1, -1, -1, -1, 0, 0 ]
+
+------------------------------
+Sou o processo 9 e estou testando no tempo 92.0
+O processo 9 testou o processo 0 correto no tempo 92.0
+Vetor de estados PROCESSO 9 no tempo 92.0: [ 0, -1, -1, -1, -1, -1, -1, -1, -1, 0 ]
+
+------------------------------
+Sou o processo 0 e estou testando no tempo 122.0
+O processo 0 testou o processo 1 correto no tempo 122.0
+Vetor de estados PROCESSO 0 no tempo 122.0: [ 0, 0, -1, -1, -1, -1, -1, -1, -1, -1 ]
+
+------------------------------

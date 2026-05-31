@@ -1,0 +1,7 @@
+limite maximo de tempo: 150
+números de procesos: 10
+
+v1: todos corretos
+v2: 1 e 4 errados (fault 31 rec 61)
+v3: 1, 2, 3, 4, 5 e 6 errados (fault 31 e rec 91)
+v3: todos errados (fault 31 rec 61)
