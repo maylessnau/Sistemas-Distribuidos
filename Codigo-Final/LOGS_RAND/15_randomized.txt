@@ -1,0 +1,758 @@
+Processo 0 tem bit inicial = 0
+Processo 1 tem bit inicial = 0
+Processo 2 tem bit inicial = 0
+Processo 3 tem bit inicial = 0
+Processo 4 tem bit inicial = 0
+Processo 5 tem bit inicial = 0
+Processo 6 tem bit inicial = 0
+Processo 7 tem bit inicial = 0
+Processo 8 tem bit inicial = 0
+Processo 9 tem bit inicial = 0
+Processo 10 tem bit inicial = 0
+Processo 11 tem bit inicial = 0
+Processo 12 tem bit inicial = 0
+Processo 13 tem bit inicial = 0
+Processo 14 tem bit inicial = 0
+
+================== INICIANDO PRIMEIRA RODADA [1] ===================
+
+Processo 1 recebeu desistência de 0.
+Processo 2 recebeu desistência de 1.
+Processo 3 recebeu desistência de 2.
+Processo 4 recebeu desistência de 3.
+Processo 5 recebeu desistência de 4.
+Processo 6 recebeu desistência de 5.
+Processo 7 recebeu desistência de 6.
+Processo 8 recebeu desistência de 7.
+Processo 9 recebeu desistência de 8.
+Processo 10 recebeu desistência de 9.
+Processo 11 recebeu desistência de 10.
+Processo 12 recebeu desistência de 11.
+Processo 13 recebeu desistência de 12.
+Processo 14 recebeu desistência de 13.
+Processo 0 recebeu desistência de 14.
+Processo 2 recebeu desistência de 0.
+Processo 3 recebeu desistência de 1.
+Processo 4 recebeu desistência de 2.
+Processo 5 recebeu desistência de 3.
+Processo 6 recebeu desistência de 4.
+Processo 7 recebeu desistência de 5.
+Processo 8 recebeu desistência de 6.
+Processo 9 recebeu desistência de 7.
+Processo 10 recebeu desistência de 8.
+Processo 11 recebeu desistência de 9.
+Processo 12 recebeu desistência de 10.
+Processo 13 recebeu desistência de 11.
+Processo 14 recebeu desistência de 12.
+Processo 0 recebeu desistência de 13.
+Processo 1 recebeu desistência de 14.
+Processo 3 recebeu desistência de 0.
+Processo 4 recebeu desistência de 1.
+Processo 5 recebeu desistência de 2.
+Processo 6 recebeu desistência de 3.
+Processo 7 recebeu desistência de 4.
+Processo 8 recebeu desistência de 5.
+Processo 9 recebeu desistência de 6.
+Processo 10 recebeu desistência de 7.
+Processo 11 recebeu desistência de 8.
+Processo 12 recebeu desistência de 9.
+Processo 13 recebeu desistência de 10.
+Processo 14 recebeu desistência de 11.
+Processo 0 recebeu desistência de 12.
+Processo 1 recebeu desistência de 13.
+Processo 2 recebeu desistência de 14.
+Processo 4 recebeu desistência de 0.
+Processo 5 recebeu desistência de 1.
+Processo 6 recebeu desistência de 2.
+Processo 7 recebeu desistência de 3.
+Processo 8 recebeu desistência de 4.
+Processo 9 recebeu desistência de 5.
+Processo 10 recebeu desistência de 6.
+Processo 11 recebeu desistência de 7.
+Processo 12 recebeu desistência de 8.
+Processo 13 recebeu desistência de 9.
+Processo 14 recebeu desistência de 10.
+Processo 0 recebeu desistência de 11.
+Processo 1 recebeu desistência de 12.
+Processo 2 recebeu desistência de 13.
+Processo 3 recebeu desistência de 14.
+Processo 5 recebeu desistência de 0.
+Processo 6 recebeu desistência de 1.
+Processo 7 recebeu desistência de 2.
+Processo 8 recebeu desistência de 3.
+Processo 9 recebeu desistência de 4.
+Processo 10 recebeu desistência de 5.
+Processo 11 recebeu desistência de 6.
+Processo 12 recebeu desistência de 7.
+Processo 13 recebeu desistência de 8.
+Processo 14 recebeu desistência de 9.
+Processo 0 recebeu desistência de 10.
+Processo 1 recebeu desistência de 11.
+Processo 2 recebeu desistência de 12.
+Processo 3 recebeu desistência de 13.
+Processo 4 recebeu desistência de 14.
+Processo 6 recebeu desistência de 0.
+Processo 7 recebeu desistência de 1.
+Processo 8 recebeu desistência de 2.
+Processo 9 recebeu desistência de 3.
+Processo 10 recebeu desistência de 4.
+Processo 11 recebeu desistência de 5.
+Processo 12 recebeu desistência de 6.
+Processo 13 recebeu desistência de 7.
+Processo 14 recebeu desistência de 8.
+Processo 0 recebeu desistência de 9.
+Processo 1 recebeu desistência de 10.
+Processo 2 recebeu desistência de 11.
+Processo 3 recebeu desistência de 12.
+Processo 4 recebeu desistência de 13.
+Processo 5 recebeu desistência de 14.
+Processo 7 recebeu desistência de 0.
+Processo 8 recebeu desistência de 1.
+Processo 9 recebeu desistência de 2.
+Processo 10 recebeu desistência de 3.
+Processo 11 recebeu desistência de 4.
+Processo 12 recebeu desistência de 5.
+Processo 13 recebeu desistência de 6.
+Processo 14 recebeu desistência de 7.
+Processo 0 recebeu desistência de 8.
+Processo 1 recebeu desistência de 9.
+Processo 2 recebeu desistência de 10.
+Processo 3 recebeu desistência de 11.
+Processo 4 recebeu desistência de 12.
+Processo 5 recebeu desistência de 13.
+Processo 6 recebeu desistência de 14.
+Processo 8 recebeu desistência de 0.
+Processo 9 recebeu desistência de 1.
+Processo 10 recebeu desistência de 2.
+Processo 11 recebeu desistência de 3.
+Processo 12 recebeu desistência de 4.
+Processo 13 recebeu desistência de 5.
+Processo 14 recebeu desistência de 6.
+Processo 0 recebeu desistência de 7.
+Processo 1 recebeu desistência de 8.
+Processo 2 recebeu desistência de 9.
+Processo 3 recebeu desistência de 10.
+Processo 4 recebeu desistência de 11.
+Processo 5 recebeu desistência de 12.
+Processo 6 recebeu desistência de 13.
+Processo 7 recebeu desistência de 14.
+Processo 9 recebeu desistência de 0.
+Processo 10 recebeu desistência de 1.
+Processo 11 recebeu desistência de 2.
+Processo 12 recebeu desistência de 3.
+Processo 13 recebeu desistência de 4.
+Processo 14 recebeu desistência de 5.
+Processo 0 recebeu desistência de 6.
+Processo 1 recebeu desistência de 7.
+Processo 2 recebeu desistência de 8.
+Processo 3 recebeu desistência de 9.
+Processo 4 recebeu desistência de 10.
+Processo 5 recebeu desistência de 11.
+Processo 6 recebeu desistência de 12.
+Processo 7 recebeu desistência de 13.
+Processo 8 recebeu desistência de 14.
+Processo 10 recebeu desistência de 0.
+Processo 11 recebeu desistência de 1.
+Processo 12 recebeu desistência de 2.
+Processo 13 recebeu desistência de 3.
+Processo 14 recebeu desistência de 4.
+Processo 0 recebeu desistência de 5.
+Processo 1 recebeu desistência de 6.
+Processo 2 recebeu desistência de 7.
+Processo 3 recebeu desistência de 8.
+Processo 4 recebeu desistência de 9.
+Processo 5 recebeu desistência de 10.
+Processo 6 recebeu desistência de 11.
+Processo 7 recebeu desistência de 12.
+Processo 8 recebeu desistência de 13.
+Processo 9 recebeu desistência de 14.
+Processo 11 recebeu desistência de 0.
+Processo 12 recebeu desistência de 1.
+Processo 13 recebeu desistência de 2.
+Processo 14 recebeu desistência de 3.
+Processo 0 recebeu desistência de 4.
+Processo 1 recebeu desistência de 5.
+Processo 2 recebeu desistência de 6.
+Processo 3 recebeu desistência de 7.
+Processo 4 recebeu desistência de 8.
+Processo 5 recebeu desistência de 9.
+Processo 6 recebeu desistência de 10.
+Processo 7 recebeu desistência de 11.
+Processo 8 recebeu desistência de 12.
+Processo 9 recebeu desistência de 13.
+Processo 10 recebeu desistência de 14.
+Processo 12 recebeu desistência de 0.
+Processo 13 recebeu desistência de 1.
+Processo 14 recebeu desistência de 2.
+Processo 0 recebeu desistência de 3.
+Processo 1 recebeu desistência de 4.
+Processo 2 recebeu desistência de 5.
+Processo 3 recebeu desistência de 6.
+Processo 4 recebeu desistência de 7.
+Processo 5 recebeu desistência de 8.
+Processo 6 recebeu desistência de 9.
+Processo 7 recebeu desistência de 10.
+Processo 8 recebeu desistência de 11.
+Processo 9 recebeu desistência de 12.
+Processo 10 recebeu desistência de 13.
+Processo 11 recebeu desistência de 14.
+Processo 13 recebeu desistência de 0.
+Processo 14 recebeu desistência de 1.
+Processo 0 recebeu desistência de 2.
+Processo 1 recebeu desistência de 3.
+Processo 2 recebeu desistência de 4.
+Processo 3 recebeu desistência de 5.
+Processo 4 recebeu desistência de 6.
+Processo 5 recebeu desistência de 7.
+Processo 6 recebeu desistência de 8.
+Processo 7 recebeu desistência de 9.
+Processo 8 recebeu desistência de 10.
+Processo 9 recebeu desistência de 11.
+Processo 10 recebeu desistência de 12.
+Processo 11 recebeu desistência de 13.
+Processo 12 recebeu desistência de 14.
+Processo 14 recebeu desistência de 0.
+Processo 0 recebeu desistência de 1.
+Processo 1 recebeu desistência de 2.
+Processo 2 recebeu desistência de 3.
+Processo 3 recebeu desistência de 4.
+Processo 4 recebeu desistência de 5.
+Processo 5 recebeu desistência de 6.
+Processo 6 recebeu desistência de 7.
+Processo 7 recebeu desistência de 8.
+Processo 8 recebeu desistência de 9.
+Processo 9 recebeu desistência de 10.
+Processo 10 recebeu desistência de 11.
+Processo 11 recebeu desistência de 12.
+Processo 12 recebeu desistência de 13.
+Processo 13 recebeu desistência de 14.
+Processo 0 recebeu desistência de 0.
+Processo 0 removeu sua mensagem do anel.
+Processo 1 recebeu desistência de 1.
+Processo 1 removeu sua mensagem do anel.
+Processo 2 recebeu desistência de 2.
+Processo 2 removeu sua mensagem do anel.
+Processo 3 recebeu desistência de 3.
+Processo 3 removeu sua mensagem do anel.
+Processo 4 recebeu desistência de 4.
+Processo 4 removeu sua mensagem do anel.
+Processo 5 recebeu desistência de 5.
+Processo 5 removeu sua mensagem do anel.
+Processo 6 recebeu desistência de 6.
+Processo 6 removeu sua mensagem do anel.
+Processo 7 recebeu desistência de 7.
+Processo 7 removeu sua mensagem do anel.
+Processo 8 recebeu desistência de 8.
+Processo 8 removeu sua mensagem do anel.
+Processo 9 recebeu desistência de 9.
+Processo 9 removeu sua mensagem do anel.
+Processo 10 recebeu desistência de 10.
+Processo 10 removeu sua mensagem do anel.
+Processo 11 recebeu desistência de 11.
+Processo 11 removeu sua mensagem do anel.
+Processo 12 recebeu desistência de 12.
+Processo 12 removeu sua mensagem do anel.
+Processo 13 recebeu desistência de 13.
+Processo 13 removeu sua mensagem do anel.
+Processo 14 recebeu desistência de 14.
+Processo 14 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: []
+
+================== INICIANDO NOVA RODADA [2] ==================
+
+Processo 0 sorteou novo bit = 1
+Processo 1 sorteou novo bit = 0
+Processo 2 sorteou novo bit = 1
+Processo 3 sorteou novo bit = 1
+Processo 4 sorteou novo bit = 1
+Processo 5 sorteou novo bit = 1
+Processo 6 sorteou novo bit = 0
+Processo 7 sorteou novo bit = 0
+Processo 8 sorteou novo bit = 1
+Processo 9 sorteou novo bit = 1
+Processo 10 sorteou novo bit = 0
+Processo 11 sorteou novo bit = 1
+Processo 12 sorteou novo bit = 0
+Processo 13 sorteou novo bit = 1
+Processo 14 sorteou novo bit = 1
+Processo 1 recebeu candidatura de 0.
+Processo 2 recebeu desistência de 1.
+Processo 3 recebeu candidatura de 2.
+Processo 4 recebeu candidatura de 3.
+Processo 5 recebeu candidatura de 4.
+Processo 6 recebeu candidatura de 5.
+Processo 7 recebeu desistência de 6.
+Processo 8 recebeu desistência de 7.
+Processo 9 recebeu candidatura de 8.
+Processo 10 recebeu candidatura de 9.
+Processo 11 recebeu desistência de 10.
+Processo 12 recebeu candidatura de 11.
+Processo 13 recebeu desistência de 12.
+Processo 14 recebeu candidatura de 13.
+Processo 0 recebeu candidatura de 14.
+Processo 2 recebeu candidatura de 0.
+Processo 3 recebeu desistência de 1.
+Processo 4 recebeu candidatura de 2.
+Processo 5 recebeu candidatura de 3.
+Processo 6 recebeu candidatura de 4.
+Processo 7 recebeu candidatura de 5.
+Processo 8 recebeu desistência de 6.
+Processo 9 recebeu desistência de 7.
+Processo 10 recebeu candidatura de 8.
+Processo 11 recebeu candidatura de 9.
+Processo 12 recebeu desistência de 10.
+Processo 13 recebeu candidatura de 11.
+Processo 14 recebeu desistência de 12.
+Processo 0 recebeu candidatura de 13.
+Processo 1 recebeu candidatura de 14.
+Processo 3 recebeu candidatura de 0.
+Processo 4 recebeu desistência de 1.
+Processo 5 recebeu candidatura de 2.
+Processo 6 recebeu candidatura de 3.
+Processo 7 recebeu candidatura de 4.
+Processo 8 recebeu candidatura de 5.
+Processo 9 recebeu desistência de 6.
+Processo 10 recebeu desistência de 7.
+Processo 11 recebeu candidatura de 8.
+Processo 12 recebeu candidatura de 9.
+Processo 13 recebeu desistência de 10.
+Processo 14 recebeu candidatura de 11.
+Processo 0 recebeu desistência de 12.
+Processo 1 recebeu candidatura de 13.
+Processo 2 recebeu candidatura de 14.
+Processo 4 recebeu candidatura de 0.
+Processo 5 recebeu desistência de 1.
+Processo 6 recebeu candidatura de 2.
+Processo 7 recebeu candidatura de 3.
+Processo 8 recebeu candidatura de 4.
+Processo 9 recebeu candidatura de 5.
+Processo 10 recebeu desistência de 6.
+Processo 11 recebeu desistência de 7.
+Processo 12 recebeu candidatura de 8.
+Processo 13 recebeu candidatura de 9.
+Processo 14 recebeu desistência de 10.
+Processo 0 recebeu candidatura de 11.
+Processo 1 recebeu desistência de 12.
+Processo 2 recebeu candidatura de 13.
+Processo 3 recebeu candidatura de 14.
+Processo 5 recebeu candidatura de 0.
+Processo 6 recebeu desistência de 1.
+Processo 7 recebeu candidatura de 2.
+Processo 8 recebeu candidatura de 3.
+Processo 9 recebeu candidatura de 4.
+Processo 10 recebeu candidatura de 5.
+Processo 11 recebeu desistência de 6.
+Processo 12 recebeu desistência de 7.
+Processo 13 recebeu candidatura de 8.
+Processo 14 recebeu candidatura de 9.
+Processo 0 recebeu desistência de 10.
+Processo 1 recebeu candidatura de 11.
+Processo 2 recebeu desistência de 12.
+Processo 3 recebeu candidatura de 13.
+Processo 4 recebeu candidatura de 14.
+Processo 6 recebeu candidatura de 0.
+Processo 7 recebeu desistência de 1.
+Processo 8 recebeu candidatura de 2.
+Processo 9 recebeu candidatura de 3.
+Processo 10 recebeu candidatura de 4.
+Processo 11 recebeu candidatura de 5.
+Processo 12 recebeu desistência de 6.
+Processo 13 recebeu desistência de 7.
+Processo 14 recebeu candidatura de 8.
+Processo 0 recebeu candidatura de 9.
+Processo 1 recebeu desistência de 10.
+Processo 2 recebeu candidatura de 11.
+Processo 3 recebeu desistência de 12.
+Processo 4 recebeu candidatura de 13.
+Processo 5 recebeu candidatura de 14.
+Processo 7 recebeu candidatura de 0.
+Processo 8 recebeu desistência de 1.
+Processo 9 recebeu candidatura de 2.
+Processo 10 recebeu candidatura de 3.
+Processo 11 recebeu candidatura de 4.
+Processo 12 recebeu candidatura de 5.
+Processo 13 recebeu desistência de 6.
+Processo 14 recebeu desistência de 7.
+Processo 0 recebeu candidatura de 8.
+Processo 1 recebeu candidatura de 9.
+Processo 2 recebeu desistência de 10.
+Processo 3 recebeu candidatura de 11.
+Processo 4 recebeu desistência de 12.
+Processo 5 recebeu candidatura de 13.
+Processo 6 recebeu candidatura de 14.
+Processo 8 recebeu candidatura de 0.
+Processo 9 recebeu desistência de 1.
+Processo 10 recebeu candidatura de 2.
+Processo 11 recebeu candidatura de 3.
+Processo 12 recebeu candidatura de 4.
+Processo 13 recebeu candidatura de 5.
+Processo 14 recebeu desistência de 6.
+Processo 0 recebeu desistência de 7.
+Processo 1 recebeu candidatura de 8.
+Processo 2 recebeu candidatura de 9.
+Processo 3 recebeu desistência de 10.
+Processo 4 recebeu candidatura de 11.
+Processo 5 recebeu desistência de 12.
+Processo 6 recebeu candidatura de 13.
+Processo 7 recebeu candidatura de 14.
+Processo 9 recebeu candidatura de 0.
+Processo 10 recebeu desistência de 1.
+Processo 11 recebeu candidatura de 2.
+Processo 12 recebeu candidatura de 3.
+Processo 13 recebeu candidatura de 4.
+Processo 14 recebeu candidatura de 5.
+Processo 0 recebeu desistência de 6.
+Processo 1 recebeu desistência de 7.
+Processo 2 recebeu candidatura de 8.
+Processo 3 recebeu candidatura de 9.
+Processo 4 recebeu desistência de 10.
+Processo 5 recebeu candidatura de 11.
+Processo 6 recebeu desistência de 12.
+Processo 7 recebeu candidatura de 13.
+Processo 8 recebeu candidatura de 14.
+Processo 10 recebeu candidatura de 0.
+Processo 11 recebeu desistência de 1.
+Processo 12 recebeu candidatura de 2.
+Processo 13 recebeu candidatura de 3.
+Processo 14 recebeu candidatura de 4.
+Processo 0 recebeu candidatura de 5.
+Processo 1 recebeu desistência de 6.
+Processo 2 recebeu desistência de 7.
+Processo 3 recebeu candidatura de 8.
+Processo 4 recebeu candidatura de 9.
+Processo 5 recebeu desistência de 10.
+Processo 6 recebeu candidatura de 11.
+Processo 7 recebeu desistência de 12.
+Processo 8 recebeu candidatura de 13.
+Processo 9 recebeu candidatura de 14.
+Processo 11 recebeu candidatura de 0.
+Processo 12 recebeu desistência de 1.
+Processo 13 recebeu candidatura de 2.
+Processo 14 recebeu candidatura de 3.
+Processo 0 recebeu candidatura de 4.
+Processo 1 recebeu candidatura de 5.
+Processo 2 recebeu desistência de 6.
+Processo 3 recebeu desistência de 7.
+Processo 4 recebeu candidatura de 8.
+Processo 5 recebeu candidatura de 9.
+Processo 6 recebeu desistência de 10.
+Processo 7 recebeu candidatura de 11.
+Processo 8 recebeu desistência de 12.
+Processo 9 recebeu candidatura de 13.
+Processo 10 recebeu candidatura de 14.
+Processo 12 recebeu candidatura de 0.
+Processo 13 recebeu desistência de 1.
+Processo 14 recebeu candidatura de 2.
+Processo 0 recebeu candidatura de 3.
+Processo 1 recebeu candidatura de 4.
+Processo 2 recebeu candidatura de 5.
+Processo 3 recebeu desistência de 6.
+Processo 4 recebeu desistência de 7.
+Processo 5 recebeu candidatura de 8.
+Processo 6 recebeu candidatura de 9.
+Processo 7 recebeu desistência de 10.
+Processo 8 recebeu candidatura de 11.
+Processo 9 recebeu desistência de 12.
+Processo 10 recebeu candidatura de 13.
+Processo 11 recebeu candidatura de 14.
+Processo 13 recebeu candidatura de 0.
+Processo 14 recebeu desistência de 1.
+Processo 0 recebeu candidatura de 2.
+Processo 1 recebeu candidatura de 3.
+Processo 2 recebeu candidatura de 4.
+Processo 3 recebeu candidatura de 5.
+Processo 4 recebeu desistência de 6.
+Processo 5 recebeu desistência de 7.
+Processo 6 recebeu candidatura de 8.
+Processo 7 recebeu candidatura de 9.
+Processo 8 recebeu desistência de 10.
+Processo 9 recebeu candidatura de 11.
+Processo 10 recebeu desistência de 12.
+Processo 11 recebeu candidatura de 13.
+Processo 12 recebeu candidatura de 14.
+Processo 14 recebeu candidatura de 0.
+Processo 0 recebeu desistência de 1.
+Processo 1 recebeu candidatura de 2.
+Processo 2 recebeu candidatura de 3.
+Processo 3 recebeu candidatura de 4.
+Processo 4 recebeu candidatura de 5.
+Processo 5 recebeu desistência de 6.
+Processo 6 recebeu desistência de 7.
+Processo 7 recebeu candidatura de 8.
+Processo 8 recebeu candidatura de 9.
+Processo 9 recebeu desistência de 10.
+Processo 10 recebeu candidatura de 11.
+Processo 11 recebeu desistência de 12.
+Processo 12 recebeu candidatura de 13.
+Processo 13 recebeu candidatura de 14.
+Processo 0 recebeu candidatura de 0.
+Processo 0 removeu sua mensagem do anel.
+Processo 1 recebeu desistência de 1.
+Processo 1 removeu sua mensagem do anel.
+Processo 2 recebeu candidatura de 2.
+Processo 2 removeu sua mensagem do anel.
+Processo 3 recebeu candidatura de 3.
+Processo 3 removeu sua mensagem do anel.
+Processo 4 recebeu candidatura de 4.
+Processo 4 removeu sua mensagem do anel.
+Processo 5 recebeu candidatura de 5.
+Processo 5 removeu sua mensagem do anel.
+Processo 6 recebeu desistência de 6.
+Processo 6 removeu sua mensagem do anel.
+Processo 7 recebeu desistência de 7.
+Processo 7 removeu sua mensagem do anel.
+Processo 8 recebeu candidatura de 8.
+Processo 8 removeu sua mensagem do anel.
+Processo 9 recebeu candidatura de 9.
+Processo 9 removeu sua mensagem do anel.
+Processo 10 recebeu desistência de 10.
+Processo 10 removeu sua mensagem do anel.
+Processo 11 recebeu candidatura de 11.
+Processo 11 removeu sua mensagem do anel.
+Processo 12 recebeu desistência de 12.
+Processo 12 removeu sua mensagem do anel.
+Processo 13 recebeu candidatura de 13.
+Processo 13 removeu sua mensagem do anel.
+Processo 14 recebeu candidatura de 14.
+Processo 14 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: [0, 2, 3, 4, 5, 8, 9, 11, 13, 14]
+
+================== INICIANDO NOVA RODADA [3] ==================
+
+Processo 0 sorteou novo bit = 0
+Processo 2 sorteou novo bit = 0
+Processo 3 sorteou novo bit = 0
+Processo 4 sorteou novo bit = 0
+Processo 5 sorteou novo bit = 0
+Processo 8 sorteou novo bit = 1
+Processo 9 sorteou novo bit = 0
+Processo 11 sorteou novo bit = 1
+Processo 13 sorteou novo bit = 1
+Processo 14 sorteou novo bit = 0
+Processo 1 recebeu desistência de 0.
+Processo 3 recebeu desistência de 2.
+Processo 4 recebeu desistência de 3.
+Processo 5 recebeu desistência de 4.
+Processo 6 recebeu desistência de 5.
+Processo 9 recebeu candidatura de 8.
+Processo 10 recebeu desistência de 9.
+Processo 12 recebeu candidatura de 11.
+Processo 14 recebeu candidatura de 13.
+Processo 0 recebeu desistência de 14.
+Processo 2 recebeu desistência de 0.
+Processo 4 recebeu desistência de 2.
+Processo 5 recebeu desistência de 3.
+Processo 6 recebeu desistência de 4.
+Processo 7 recebeu desistência de 5.
+Processo 10 recebeu candidatura de 8.
+Processo 11 recebeu desistência de 9.
+Processo 13 recebeu candidatura de 11.
+Processo 0 recebeu candidatura de 13.
+Processo 1 recebeu desistência de 14.
+Processo 3 recebeu desistência de 0.
+Processo 5 recebeu desistência de 2.
+Processo 6 recebeu desistência de 3.
+Processo 7 recebeu desistência de 4.
+Processo 8 recebeu desistência de 5.
+Processo 11 recebeu candidatura de 8.
+Processo 12 recebeu desistência de 9.
+Processo 14 recebeu candidatura de 11.
+Processo 1 recebeu candidatura de 13.
+Processo 2 recebeu desistência de 14.
+Processo 4 recebeu desistência de 0.
+Processo 6 recebeu desistência de 2.
+Processo 7 recebeu desistência de 3.
+Processo 8 recebeu desistência de 4.
+Processo 9 recebeu desistência de 5.
+Processo 12 recebeu candidatura de 8.
+Processo 13 recebeu desistência de 9.
+Processo 0 recebeu candidatura de 11.
+Processo 2 recebeu candidatura de 13.
+Processo 3 recebeu desistência de 14.
+Processo 5 recebeu desistência de 0.
+Processo 7 recebeu desistência de 2.
+Processo 8 recebeu desistência de 3.
+Processo 9 recebeu desistência de 4.
+Processo 10 recebeu desistência de 5.
+Processo 13 recebeu candidatura de 8.
+Processo 14 recebeu desistência de 9.
+Processo 1 recebeu candidatura de 11.
+Processo 3 recebeu candidatura de 13.
+Processo 4 recebeu desistência de 14.
+Processo 6 recebeu desistência de 0.
+Processo 8 recebeu desistência de 2.
+Processo 9 recebeu desistência de 3.
+Processo 10 recebeu desistência de 4.
+Processo 11 recebeu desistência de 5.
+Processo 14 recebeu candidatura de 8.
+Processo 0 recebeu desistência de 9.
+Processo 2 recebeu candidatura de 11.
+Processo 4 recebeu candidatura de 13.
+Processo 5 recebeu desistência de 14.
+Processo 7 recebeu desistência de 0.
+Processo 9 recebeu desistência de 2.
+Processo 10 recebeu desistência de 3.
+Processo 11 recebeu desistência de 4.
+Processo 12 recebeu desistência de 5.
+Processo 0 recebeu candidatura de 8.
+Processo 1 recebeu desistência de 9.
+Processo 3 recebeu candidatura de 11.
+Processo 5 recebeu candidatura de 13.
+Processo 6 recebeu desistência de 14.
+Processo 8 recebeu desistência de 0.
+Processo 10 recebeu desistência de 2.
+Processo 11 recebeu desistência de 3.
+Processo 12 recebeu desistência de 4.
+Processo 13 recebeu desistência de 5.
+Processo 1 recebeu candidatura de 8.
+Processo 2 recebeu desistência de 9.
+Processo 4 recebeu candidatura de 11.
+Processo 6 recebeu candidatura de 13.
+Processo 7 recebeu desistência de 14.
+Processo 9 recebeu desistência de 0.
+Processo 11 recebeu desistência de 2.
+Processo 12 recebeu desistência de 3.
+Processo 13 recebeu desistência de 4.
+Processo 14 recebeu desistência de 5.
+Processo 2 recebeu candidatura de 8.
+Processo 3 recebeu desistência de 9.
+Processo 5 recebeu candidatura de 11.
+Processo 7 recebeu candidatura de 13.
+Processo 8 recebeu desistência de 14.
+Processo 10 recebeu desistência de 0.
+Processo 12 recebeu desistência de 2.
+Processo 13 recebeu desistência de 3.
+Processo 14 recebeu desistência de 4.
+Processo 0 recebeu desistência de 5.
+Processo 3 recebeu candidatura de 8.
+Processo 4 recebeu desistência de 9.
+Processo 6 recebeu candidatura de 11.
+Processo 8 recebeu candidatura de 13.
+Processo 9 recebeu desistência de 14.
+Processo 11 recebeu desistência de 0.
+Processo 13 recebeu desistência de 2.
+Processo 14 recebeu desistência de 3.
+Processo 0 recebeu desistência de 4.
+Processo 1 recebeu desistência de 5.
+Processo 4 recebeu candidatura de 8.
+Processo 5 recebeu desistência de 9.
+Processo 7 recebeu candidatura de 11.
+Processo 9 recebeu candidatura de 13.
+Processo 10 recebeu desistência de 14.
+Processo 12 recebeu desistência de 0.
+Processo 14 recebeu desistência de 2.
+Processo 0 recebeu desistência de 3.
+Processo 1 recebeu desistência de 4.
+Processo 2 recebeu desistência de 5.
+Processo 5 recebeu candidatura de 8.
+Processo 6 recebeu desistência de 9.
+Processo 8 recebeu candidatura de 11.
+Processo 10 recebeu candidatura de 13.
+Processo 11 recebeu desistência de 14.
+Processo 13 recebeu desistência de 0.
+Processo 0 recebeu desistência de 2.
+Processo 1 recebeu desistência de 3.
+Processo 2 recebeu desistência de 4.
+Processo 3 recebeu desistência de 5.
+Processo 6 recebeu candidatura de 8.
+Processo 7 recebeu desistência de 9.
+Processo 9 recebeu candidatura de 11.
+Processo 11 recebeu candidatura de 13.
+Processo 12 recebeu desistência de 14.
+Processo 14 recebeu desistência de 0.
+Processo 1 recebeu desistência de 2.
+Processo 2 recebeu desistência de 3.
+Processo 3 recebeu desistência de 4.
+Processo 4 recebeu desistência de 5.
+Processo 7 recebeu candidatura de 8.
+Processo 8 recebeu desistência de 9.
+Processo 10 recebeu candidatura de 11.
+Processo 12 recebeu candidatura de 13.
+Processo 13 recebeu desistência de 14.
+Processo 0 recebeu desistência de 0.
+Processo 0 removeu sua mensagem do anel.
+Processo 2 recebeu desistência de 2.
+Processo 2 removeu sua mensagem do anel.
+Processo 3 recebeu desistência de 3.
+Processo 3 removeu sua mensagem do anel.
+Processo 4 recebeu desistência de 4.
+Processo 4 removeu sua mensagem do anel.
+Processo 5 recebeu desistência de 5.
+Processo 5 removeu sua mensagem do anel.
+Processo 8 recebeu candidatura de 8.
+Processo 8 removeu sua mensagem do anel.
+Processo 9 recebeu desistência de 9.
+Processo 9 removeu sua mensagem do anel.
+Processo 11 recebeu candidatura de 11.
+Processo 11 removeu sua mensagem do anel.
+Processo 13 recebeu candidatura de 13.
+Processo 13 removeu sua mensagem do anel.
+Processo 14 recebeu desistência de 14.
+Processo 14 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: [8, 11, 13]
+
+================== INICIANDO NOVA RODADA [4] ==================
+
+Processo 8 sorteou novo bit = 0
+Processo 11 sorteou novo bit = 0
+Processo 13 sorteou novo bit = 1
+Processo 9 recebeu desistência de 8.
+Processo 12 recebeu desistência de 11.
+Processo 14 recebeu candidatura de 13.
+Processo 10 recebeu desistência de 8.
+Processo 13 recebeu desistência de 11.
+Processo 0 recebeu candidatura de 13.
+Processo 11 recebeu desistência de 8.
+Processo 14 recebeu desistência de 11.
+Processo 1 recebeu candidatura de 13.
+Processo 12 recebeu desistência de 8.
+Processo 0 recebeu desistência de 11.
+Processo 2 recebeu candidatura de 13.
+Processo 13 recebeu desistência de 8.
+Processo 1 recebeu desistência de 11.
+Processo 3 recebeu candidatura de 13.
+Processo 14 recebeu desistência de 8.
+Processo 2 recebeu desistência de 11.
+Processo 4 recebeu candidatura de 13.
+Processo 0 recebeu desistência de 8.
+Processo 3 recebeu desistência de 11.
+Processo 5 recebeu candidatura de 13.
+Processo 1 recebeu desistência de 8.
+Processo 4 recebeu desistência de 11.
+Processo 6 recebeu candidatura de 13.
+Processo 2 recebeu desistência de 8.
+Processo 5 recebeu desistência de 11.
+Processo 7 recebeu candidatura de 13.
+Processo 3 recebeu desistência de 8.
+Processo 6 recebeu desistência de 11.
+Processo 8 recebeu candidatura de 13.
+Processo 4 recebeu desistência de 8.
+Processo 7 recebeu desistência de 11.
+Processo 9 recebeu candidatura de 13.
+Processo 5 recebeu desistência de 8.
+Processo 8 recebeu desistência de 11.
+Processo 10 recebeu candidatura de 13.
+Processo 6 recebeu desistência de 8.
+Processo 9 recebeu desistência de 11.
+Processo 11 recebeu candidatura de 13.
+Processo 7 recebeu desistência de 8.
+Processo 10 recebeu desistência de 11.
+Processo 12 recebeu candidatura de 13.
+Processo 8 recebeu desistência de 8.
+Processo 8 removeu sua mensagem do anel.
+Processo 11 recebeu desistência de 11.
+Processo 11 removeu sua mensagem do anel.
+Processo 13 recebeu candidatura de 13.
+Processo 13 removeu sua mensagem do anel.
+
+Fim da Eleição de Líder no tempo 63.0!
+
+Líder eleito: processo 13
+Mensagens enviadas: 645
+Eu, processo de ID 13, sou o líder!

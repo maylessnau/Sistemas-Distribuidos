@@ -1,0 +1,139 @@
+Processo 0 tem bit inicial = 0
+Processo 1 tem bit inicial = 0
+Processo 2 tem bit inicial = 0
+Processo 3 tem bit inicial = 0
+Processo 4 tem bit inicial = 0
+
+================== INICIANDO PRIMEIRA RODADA [1] ===================
+
+[Tempo: 1.0] Processo 1 recebeu desistência de 0.
+[Tempo: 1.0] Processo 2 recebeu desistência de 1.
+[Tempo: 1.0] Processo 3 recebeu desistência de 2.
+[Tempo: 1.0] Processo 4 recebeu desistência de 3.
+[Tempo: 1.0] Processo 0 recebeu desistência de 4.
+[Tempo: 2.0] Processo 2 recebeu desistência de 0.
+[Tempo: 2.0] Processo 3 recebeu desistência de 1.
+[Tempo: 2.0] Processo 4 recebeu desistência de 2.
+[Tempo: 2.0] Processo 0 recebeu desistência de 3.
+[Tempo: 2.0] Processo 1 recebeu desistência de 4.
+[Tempo: 3.0] Processo 3 recebeu desistência de 0.
+[Tempo: 3.0] Processo 4 recebeu desistência de 1.
+[Tempo: 3.0] Processo 0 recebeu desistência de 2.
+[Tempo: 3.0] Processo 1 recebeu desistência de 3.
+[Tempo: 3.0] Processo 2 recebeu desistência de 4.
+[Tempo: 4.0] Processo 4 recebeu desistência de 0.
+[Tempo: 4.0] Processo 0 recebeu desistência de 1.
+[Tempo: 4.0] Processo 1 recebeu desistência de 2.
+[Tempo: 4.0] Processo 2 recebeu desistência de 3.
+[Tempo: 4.0] Processo 3 recebeu desistência de 4.
+[Tempo: 5.0] Processo 0 recebeu desistência de 0.
+[Tempo: 5.0] Processo 0 removeu sua mensagem do anel.
+[Tempo: 5.0] Processo 1 recebeu desistência de 1.
+[Tempo: 5.0] Processo 1 removeu sua mensagem do anel.
+[Tempo: 5.0] Processo 2 recebeu desistência de 2.
+[Tempo: 5.0] Processo 2 removeu sua mensagem do anel.
+[Tempo: 5.0] Processo 3 recebeu desistência de 3.
+[Tempo: 5.0] Processo 3 removeu sua mensagem do anel.
+[Tempo: 5.0] Processo 4 recebeu desistência de 4.
+[Tempo: 5.0] Processo 4 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: []
+
+================== INICIANDO NOVA RODADA [2] ==================
+
+[Tempo: 6.0] Processo 0 sorteou novo bit = 1
+[Tempo: 6.0] Processo 1 sorteou novo bit = 0
+[Tempo: 6.0] Processo 2 sorteou novo bit = 1
+[Tempo: 6.0] Processo 3 sorteou novo bit = 1
+[Tempo: 6.0] Processo 4 sorteou novo bit = 1
+[Tempo:  7.0] Processo 1 recebeu candidatura de 0.
+[Tempo: 7.0] Processo 2 recebeu desistência de 1.
+[Tempo:  7.0] Processo 3 recebeu candidatura de 2.
+[Tempo:  7.0] Processo 4 recebeu candidatura de 3.
+[Tempo:  7.0] Processo 0 recebeu candidatura de 4.
+[Tempo:  8.0] Processo 2 recebeu candidatura de 0.
+[Tempo: 8.0] Processo 3 recebeu desistência de 1.
+[Tempo:  8.0] Processo 4 recebeu candidatura de 2.
+[Tempo:  8.0] Processo 0 recebeu candidatura de 3.
+[Tempo:  8.0] Processo 1 recebeu candidatura de 4.
+[Tempo:  9.0] Processo 3 recebeu candidatura de 0.
+[Tempo: 9.0] Processo 4 recebeu desistência de 1.
+[Tempo:  9.0] Processo 0 recebeu candidatura de 2.
+[Tempo:  9.0] Processo 1 recebeu candidatura de 3.
+[Tempo:  9.0] Processo 2 recebeu candidatura de 4.
+[Tempo: 10.0] Processo 4 recebeu candidatura de 0.
+[Tempo:10.0] Processo 0 recebeu desistência de 1.
+[Tempo: 10.0] Processo 1 recebeu candidatura de 2.
+[Tempo: 10.0] Processo 2 recebeu candidatura de 3.
+[Tempo: 10.0] Processo 3 recebeu candidatura de 4.
+[Tempo: 11.0] Processo 0 recebeu candidatura de 0.
+[Tempo:11.0] Processo 0 removeu sua mensagem do anel.
+[Tempo:11.0] Processo 1 recebeu desistência de 1.
+[Tempo:11.0] Processo 1 removeu sua mensagem do anel.
+[Tempo: 11.0] Processo 2 recebeu candidatura de 2.
+[Tempo:11.0] Processo 2 removeu sua mensagem do anel.
+[Tempo: 11.0] Processo 3 recebeu candidatura de 3.
+[Tempo:11.0] Processo 3 removeu sua mensagem do anel.
+[Tempo: 11.0] Processo 4 recebeu candidatura de 4.
+[Tempo:11.0] Processo 4 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: [0, 2, 3, 4]
+
+================== INICIANDO NOVA RODADA [3] ==================
+
+[Tempo:12.0] Processo 0 sorteou novo bit = 1
+[Tempo:12.0] Processo 2 sorteou novo bit = 0
+[Tempo:12.0] Processo 3 sorteou novo bit = 0
+[Tempo:12.0] Processo 4 sorteou novo bit = 1
+[Tempo: 13.0] Processo 1 recebeu candidatura de 0.
+[Tempo:13.0] Processo 3 recebeu desistência de 2.
+[Tempo:13.0] Processo 4 recebeu desistência de 3.
+[Tempo: 13.0] Processo 0 recebeu candidatura de 4.
+[Tempo: 14.0] Processo 2 recebeu candidatura de 0.
+[Tempo:14.0] Processo 4 recebeu desistência de 2.
+[Tempo:14.0] Processo 0 recebeu desistência de 3.
+[Tempo: 14.0] Processo 1 recebeu candidatura de 4.
+[Tempo: 15.0] Processo 3 recebeu candidatura de 0.
+[Tempo:15.0] Processo 0 recebeu desistência de 2.
+[Tempo:15.0] Processo 1 recebeu desistência de 3.
+[Tempo: 15.0] Processo 2 recebeu candidatura de 4.
+[Tempo: 16.0] Processo 4 recebeu candidatura de 0.
+[Tempo:16.0] Processo 1 recebeu desistência de 2.
+[Tempo:16.0] Processo 2 recebeu desistência de 3.
+[Tempo: 16.0] Processo 3 recebeu candidatura de 4.
+[Tempo: 17.0] Processo 0 recebeu candidatura de 0.
+[Tempo:17.0] Processo 0 removeu sua mensagem do anel.
+[Tempo:17.0] Processo 2 recebeu desistência de 2.
+[Tempo:17.0] Processo 2 removeu sua mensagem do anel.
+[Tempo:17.0] Processo 3 recebeu desistência de 3.
+[Tempo:17.0] Processo 3 removeu sua mensagem do anel.
+[Tempo: 17.0] Processo 4 recebeu candidatura de 4.
+[Tempo:17.0] Processo 4 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: [0, 4]
+
+================== INICIANDO NOVA RODADA [4] ==================
+
+[Tempo:18.0] Processo 0 sorteou novo bit = 1
+[Tempo:18.0] Processo 4 sorteou novo bit = 0
+[Tempo: 19.0] Processo 1 recebeu candidatura de 0.
+[Tempo:19.0] Processo 0 recebeu desistência de 4.
+[Tempo: 20.0] Processo 2 recebeu candidatura de 0.
+[Tempo:20.0] Processo 1 recebeu desistência de 4.
+[Tempo: 21.0] Processo 3 recebeu candidatura de 0.
+[Tempo:21.0] Processo 2 recebeu desistência de 4.
+[Tempo: 22.0] Processo 4 recebeu candidatura de 0.
+[Tempo:22.0] Processo 3 recebeu desistência de 4.
+[Tempo: 23.0] Processo 0 recebeu candidatura de 0.
+[Tempo:23.0] Processo 0 removeu sua mensagem do anel.
+[Tempo:23.0] Processo 4 recebeu desistência de 4.
+[Tempo:23.0] Processo 4 removeu sua mensagem do anel.
+
+Fim da Eleição de Líder no tempo 23.0!
+
+Líder eleito: processo 0
+Mensagens enviadas: 80
+Eu, processo de ID 0, sou o líder!

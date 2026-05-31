@@ -1,0 +1,36 @@
+
+=====================================
+CENARIO: VARIOS CANDIDATOS
+=====================================
+
+O processo 0 agora é candidato!
+O processo 2 agora é candidato!
+O processo 3 agora é candidato!
+O processo 4 agora é candidato!
+O processo 5 agora é candidato!
+[Tempo: 1.0] Processo 1 recebeu mensagem de 0 dizendo que 0 é candidato a líder.
+Processo 1 agora considera que 0 é o líder!
+[Tempo: 1.0] Processo 3 recebeu mensagem de 2 dizendo que 2 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 4 recebeu mensagem de 3 dizendo que 3 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 5 recebeu mensagem de 4 dizendo que 4 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 6 recebeu mensagem de 5 dizendo que 5 é candidato a líder.
+Processo 6 agora considera que 5 é o líder!
+[Tempo: 2.0] Processo 2 recebeu mensagem de 1 dizendo que 0 é candidato a líder.
+Mensagem descartada!
+[Tempo: 2.0] Processo 0 recebeu mensagem de 6 dizendo que 5 é candidato a líder.
+Processo 0 agora considera que 5 é o líder!
+[Tempo: 3.0] Processo 1 recebeu mensagem de 0 dizendo que 5 é candidato a líder.
+Processo 1 agora considera que 5 é o líder!
+[Tempo: 4.0] Processo 2 recebeu mensagem de 1 dizendo que 5 é candidato a líder.
+Processo 2 agora considera que 5 é o líder!
+[Tempo: 5.0] Processo 3 recebeu mensagem de 2 dizendo que 5 é candidato a líder.
+Processo 3 agora considera que 5 é o líder!
+[Tempo: 6.0] Processo 4 recebeu mensagem de 3 dizendo que 5 é candidato a líder.
+Processo 4 agora considera que 5 é o líder!
+[Tempo: 7.0] Processo 5 recebeu mensagem de 4 dizendo que 5 é candidato a líder.
+Fim da Eleição de Líder no tempo  7.0!
+Mensagens enviadas: 12
+Eu, processo de ID 5, sou o líder!

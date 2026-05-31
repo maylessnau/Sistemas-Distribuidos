@@ -1,0 +1,83 @@
+
+=====================================
+CENARIO: TODOS OS PROCESSOS CANDIDATOS
+=====================================
+
+O processo 0 agora é candidato!
+O processo 1 agora é candidato!
+O processo 2 agora é candidato!
+O processo 3 agora é candidato!
+O processo 4 agora é candidato!
+O processo 5 agora é candidato!
+O processo 6 agora é candidato!
+O processo 7 agora é candidato!
+O processo 8 agora é candidato!
+O processo 9 agora é candidato!
+[Tempo: 1.0] Processo 1 recebeu mensagem de 0 dizendo que 0 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 2 recebeu mensagem de 1 dizendo que 1 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 3 recebeu mensagem de 2 dizendo que 2 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 4 recebeu mensagem de 3 dizendo que 3 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 5 recebeu mensagem de 4 dizendo que 4 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 6 recebeu mensagem de 5 dizendo que 5 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 7 recebeu mensagem de 6 dizendo que 6 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 8 recebeu mensagem de 7 dizendo que 7 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 9 recebeu mensagem de 8 dizendo que 8 é candidato a líder.
+Mensagem descartada!
+[Tempo: 1.0] Processo 0 recebeu mensagem de 9 dizendo que 9 é candidato a líder.
+Processo 0 agora considera que 9 é o líder!
+O processo 9 falhou no tempo  2.0
+Candidato 9 está falho. Nova eleição.
+O processo 0 agora é candidato!
+O processo 1 agora é candidato!
+O processo 2 agora é candidato!
+O processo 3 agora é candidato!
+O processo 4 agora é candidato!
+O processo 5 agora é candidato!
+O processo 6 agora é candidato!
+O processo 7 agora é candidato!
+O processo 8 agora é candidato!
+[Tempo: 4.0] Processo 1 recebeu mensagem de 0 dizendo que 0 é candidato a líder.
+Mensagem descartada!
+[Tempo: 4.0] Processo 2 recebeu mensagem de 1 dizendo que 1 é candidato a líder.
+Mensagem descartada!
+[Tempo: 4.0] Processo 3 recebeu mensagem de 2 dizendo que 2 é candidato a líder.
+Mensagem descartada!
+[Tempo: 4.0] Processo 4 recebeu mensagem de 3 dizendo que 3 é candidato a líder.
+Mensagem descartada!
+[Tempo: 4.0] Processo 5 recebeu mensagem de 4 dizendo que 4 é candidato a líder.
+Mensagem descartada!
+[Tempo: 4.0] Processo 6 recebeu mensagem de 5 dizendo que 5 é candidato a líder.
+Mensagem descartada!
+[Tempo: 4.0] Processo 7 recebeu mensagem de 6 dizendo que 6 é candidato a líder.
+Mensagem descartada!
+[Tempo: 4.0] Processo 8 recebeu mensagem de 7 dizendo que 7 é candidato a líder.
+Mensagem descartada!
+[Tempo: 4.0] Processo 0 recebeu mensagem de 8 dizendo que 8 é candidato a líder.
+Processo 0 agora considera que 8 é o líder!
+[Tempo: 5.0] Processo 1 recebeu mensagem de 0 dizendo que 8 é candidato a líder.
+Processo 1 agora considera que 8 é o líder!
+[Tempo: 6.0] Processo 2 recebeu mensagem de 1 dizendo que 8 é candidato a líder.
+Processo 2 agora considera que 8 é o líder!
+[Tempo: 7.0] Processo 3 recebeu mensagem de 2 dizendo que 8 é candidato a líder.
+Processo 3 agora considera que 8 é o líder!
+[Tempo: 8.0] Processo 4 recebeu mensagem de 3 dizendo que 8 é candidato a líder.
+Processo 4 agora considera que 8 é o líder!
+[Tempo: 9.0] Processo 5 recebeu mensagem de 4 dizendo que 8 é candidato a líder.
+Processo 5 agora considera que 8 é o líder!
+O processo 9 recuperou no tempo 10.0
+[Tempo:10.0] Processo 6 recebeu mensagem de 5 dizendo que 8 é candidato a líder.
+Processo 6 agora considera que 8 é o líder!
+[Tempo:11.0] Processo 7 recebeu mensagem de 6 dizendo que 8 é candidato a líder.
+Processo 7 agora considera que 8 é o líder!
+[Tempo:12.0] Processo 8 recebeu mensagem de 7 dizendo que 8 é candidato a líder.
+Fim da Eleição de Líder no tempo 12.0!
+Mensagens enviadas: 28
+Eu, processo de ID 8, sou o líder!

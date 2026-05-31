@@ -14,7 +14,9 @@
 #include "smpl.h"
 #include "fila.h"
 #include "randomized.h"
+#include "chang-roberts.h"
 
+// ProcessoCR *processo;
 ProcessoRand *processo;
 
 void imprime_state (int p, int N) {
@@ -63,8 +65,8 @@ void teste (int token, int N) {
         }
 
         // se chegou aqui eh porque esta falho :(
-        printf ("O processo %d testou o processo %d falho no tempo %4.1f\n", 
-            token, proximo, time());
+        //printf ("O processo %d testou o processo %d falho no tempo %4.1f\n", 
+        //    token, proximo, time());
         
         processo[token].State[proximo] = SUSPEITO;
 
@@ -76,7 +78,7 @@ void teste (int token, int N) {
         printf ("O processo %d testou todos os processos falhos no tempo %4.1f\n", token, time());
 
     // mostrando vetor State[]
-    imprime_state(token, N);
+    // imprime_state(token, N);
 
 }
 
@@ -85,10 +87,10 @@ int main (int argc, char *argv[]) {
     static int N,                   // numero de processos do sistema distribuido
            token,                   // indica o processo que esta executando agora
            event,                   // evento da simulacao
-           i, j;                    // controle de indices em vetor
+           i;                       // controle de indices em vetor
 
     /********************************* INICIALIZACOES ***********************************/
-        
+
     static char fa_name[5]; 
     
     if (argc != 2) {
@@ -106,8 +108,12 @@ int main (int argc, char *argv[]) {
     srand(time(NULL));
     
     // inicializando os N processos
+    // processo = (ProcessoCR*) malloc (sizeof(ProcessoCR)*N);
+    // cr_init (processo, N);
+
     processo = (ProcessoRand*) malloc (sizeof(ProcessoRand)*N);
     rand_init (processo, N);
+
 
     for(i = 0; i < N; i++) {
         memset(fa_name, '\0', 5);
@@ -115,16 +121,38 @@ int main (int argc, char *argv[]) {
         processo[i].id = facility(fa_name, 1);
     }
 
+    // int modo = TODOS_CANDIDATOS;        // determina o caso da eleicao 
+
+    // printf("\n");
+    // printf("=====================================\n");
+
+    // switch (modo) {
+
+    // case UM_CANDIDATO:
+    //     printf("CENARIO: UM CANDIDATO\n");
+    //     break;
+
+    // case VARIOS_CANDIDATOS:
+    //     printf("CENARIO: VARIOS CANDIDATOS\n");
+    //     break;
+
+    // case TODOS_CANDIDATOS:
+    //     printf("CENARIO: TODOS OS PROCESSOS CANDIDATOS\n");
+    //     break;
+    // }
+
+    // printf("=====================================\n\n");
+
     /********************************** SCHEDULES ************************************/
     // vamos agora fazer o escalonamento dos eventos iniciais
 
     for (i = 0; i < N; i++) {
-        // todos os processos de 0 ate N-1 vão testar na unidade de tempo 30
-       schedule(test, 30.0, i); 
+        // todos os processos de 0 ate N-1 vão testar na unidade de tempo 1
+       schedule(test, 1.0, i); 
     }
 
-    //schedule(fault, 31.0, 1);
-    //schedule(recovery, 61.0, 1);
+    //schedule(fault, 2.0, 0);
+    //schedule(recovery, 10.0, 8);
     
     for (i = 0; i < N; i++) {
         // todos vao eleger um lider
@@ -134,10 +162,15 @@ int main (int argc, char *argv[]) {
     /*************************** VARIAVEIS DE CONTROLE ***************************/
 
     int mensagensEnviadas = 0;      // conta quantas mensagens foram enviadas na eleicao
+                                    // (todos candidatos, aleatorio, um candidato)
+    
+    //  variaveis exclusivas randomized
+
     int rodadaAtual = 1;            // numero da rodada atual
     int eleicaoTerminou = 0;        // diz se a eleicao ja terminou
     int ultimaRodadaAtualizada = 0; // guarda o valor da ultima rodada atualizada
     int comecaramEleicao = 0;       // numero de processos que ja comecaram a eleicao
+    
     int acabou = 0;                 // determina o fim da execucao
 
     /************************ LOOP PRINCIPAL DO SIMULADOR ************************/
@@ -157,12 +190,17 @@ int main (int argc, char *argv[]) {
                 // testa se o processo esta falho ou correto e obtem informacoes
                 teste (token, N);
 
-                // testa a cada 30 intervalos de tempo
-                schedule (test, 30.0, token);
+                // testa a cada 5 intervalos de tempo
+                schedule (test, 5.0, token);
                 break;
 
             case election:
                 
+                // processo falho não participa de eleicao
+                if (status(processo[token].id) != 0) break;
+
+                // cr_election (processo, token, N, &mensagensEnviadas, modo);
+                    
                 rand_election (processo, token, N, rodadaAtual, &mensagensEnviadas, 
                     &comecaramEleicao);
 
@@ -170,10 +208,18 @@ int main (int argc, char *argv[]) {
 
             case receive:
 
+                // processo falho nao recebe mensagem
+                // if (status(processo[token].id) != 0) break; 
+                // cr_receive (processo, token, N, &mensagensEnviadas);
+
                 rand_receive (processo, token, N, rodadaAtual, &mensagensEnviadas);
+                
                 break;
 
             case newRound:
+
+                //processo falho nao comeca nova rodada
+                if (status(processo[token].id) != 0) break; 
 
                 rand_new_round (processo, token, N, &rodadaAtual, &ultimaRodadaAtualizada,
                     &eleicaoTerminou, &mensagensEnviadas);
@@ -182,16 +228,25 @@ int main (int argc, char *argv[]) {
 
             case leader:
 
-                rand_leader (token, mensagensEnviadas);
+                // se o lider esta falho, refaz eleicao
+                if (status(processo[token].id) != 0) {
+                    for (i = 0; i < N; i++) {
+                        schedule (election, 1.0, i);
+                    }
+                }
 
+                printf ("Mensagens enviadas: %d\n", mensagensEnviadas);
+                printf ("Eu, processo de ID %d, sou o líder!\n", token);
+                
                 // fim do programa -> lider eleito
-                acabou= 1;
+                acabou = 1;
                 break; 
 
             case fault:
 
                 request (processo[token].id, token, 0);
                 printf ("O processo %d falhou no tempo %4.1f\n", token, time());
+
                 break;
 
             case recovery:
@@ -204,7 +259,10 @@ int main (int argc, char *argv[]) {
     }
 
     // limpa a memoria
+    // cr_destroy (processo, N);
+
     rand_destroy (processo, N);
+
     free (processo);
 
     return 0;

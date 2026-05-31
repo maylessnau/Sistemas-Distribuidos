@@ -59,9 +59,6 @@ void rand_receive(ProcessoRand processo[], int token, int N, int rodadaAtual,
 void rand_new_round(ProcessoRand processo[], int token, int N, int *rodadaAtual,
     int *ultimaRodadaAtualizada, int *eleicaoTerminou, int *mensagensEnviadas);
 
-// finaliza a eleicao de lider
-void rand_leader (int token, int mensagensEnviadas);
-
 // envia uma mensagem para outro processo do anel
 void rand_send(ProcessoRand processo[], int destino, int bit, int origem, int rodada);
 

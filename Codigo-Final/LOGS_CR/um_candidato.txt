@@ -1,0 +1,18 @@
+
+=====================================
+CENARIO: UM CANDIDATO
+=====================================
+
+O processo 4 agora é candidato!
+[Tempo: 1.0] Processo 0 recebeu mensagem de 4 dizendo que 4 é candidato a líder.
+Processo 0 agora considera que 4 é o líder!
+[Tempo: 2.0] Processo 1 recebeu mensagem de 0 dizendo que 4 é candidato a líder.
+Processo 1 agora considera que 4 é o líder!
+[Tempo: 3.0] Processo 2 recebeu mensagem de 1 dizendo que 4 é candidato a líder.
+Processo 2 agora considera que 4 é o líder!
+[Tempo: 4.0] Processo 3 recebeu mensagem de 2 dizendo que 4 é candidato a líder.
+Processo 3 agora considera que 4 é o líder!
+[Tempo: 5.0] Processo 4 recebeu mensagem de 3 dizendo que 4 é candidato a líder.
+Fim da Eleição de Líder no tempo  5.0!
+Mensagens enviadas: 5
+Eu, processo de ID 4, sou o líder!

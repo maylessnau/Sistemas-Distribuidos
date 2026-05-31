@@ -1,0 +1,77 @@
+Processo 0 tem bit inicial = 0
+Processo 1 tem bit inicial = 0
+Processo 2 tem bit inicial = 0
+
+================== INICIANDO PRIMEIRA RODADA [1] ===================
+
+Processo 1 recebeu desistência de 0.
+Processo 2 recebeu desistência de 1.
+Processo 0 recebeu desistência de 2.
+Processo 2 recebeu desistência de 0.
+Processo 0 recebeu desistência de 1.
+Processo 1 recebeu desistência de 2.
+Processo 0 recebeu desistência de 0.
+Processo 0 removeu sua mensagem do anel.
+Processo 1 recebeu desistência de 1.
+Processo 1 removeu sua mensagem do anel.
+Processo 2 recebeu desistência de 2.
+Processo 2 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: []
+
+================== INICIANDO NOVA RODADA [2] ==================
+
+Processo 0 sorteou novo bit = 1
+Processo 1 sorteou novo bit = 0
+Processo 2 sorteou novo bit = 1
+Processo 1 recebeu candidatura de 0.
+Processo 2 recebeu desistência de 1.
+Processo 0 recebeu candidatura de 2.
+Processo 2 recebeu candidatura de 0.
+Processo 0 recebeu desistência de 1.
+Processo 1 recebeu candidatura de 2.
+Processo 0 recebeu candidatura de 0.
+Processo 0 removeu sua mensagem do anel.
+Processo 1 recebeu desistência de 1.
+Processo 1 removeu sua mensagem do anel.
+Processo 2 recebeu candidatura de 2.
+Processo 2 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: [0, 2]
+
+================== INICIANDO NOVA RODADA [3] ==================
+
+Processo 0 sorteou novo bit = 1
+Processo 2 sorteou novo bit = 1
+Processo 1 recebeu candidatura de 0.
+Processo 0 recebeu candidatura de 2.
+Processo 2 recebeu candidatura de 0.
+Processo 1 recebeu candidatura de 2.
+Processo 0 recebeu candidatura de 0.
+Processo 0 removeu sua mensagem do anel.
+Processo 2 recebeu candidatura de 2.
+Processo 2 removeu sua mensagem do anel.
+
+Fim da Rodada!
+Candidatos restantes: [0, 2]
+
+================== INICIANDO NOVA RODADA [4] ==================
+
+Processo 0 sorteou novo bit = 1
+Processo 2 sorteou novo bit = 0
+Processo 1 recebeu candidatura de 0.
+Processo 0 recebeu desistência de 2.
+Processo 2 recebeu candidatura de 0.
+Processo 1 recebeu desistência de 2.
+Processo 0 recebeu candidatura de 0.
+Processo 0 removeu sua mensagem do anel.
+Processo 2 recebeu desistência de 2.
+Processo 2 removeu sua mensagem do anel.
+
+Fim da Eleição de Líder no tempo 15.0!
+
+Líder eleito: processo 0
+Mensagens enviadas: 30
+Eu, processo de ID 0, sou o líder!
